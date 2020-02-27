@@ -1,3 +1,9 @@
+## How to Contribute
+
+For those who have volunteered to work with me on this project, please create a directory on your hard drive and then clone down the project.  Make sure to create a feature branch to work on (don't work on the Master copy please!). My feature branch names will be like this:  joy0227addimage (the 0227 is the date that I initiated that code).  Please name your branches in a similar pattern so that I can tell whose code, when it was generated and what feature you worked on when we are looking at your pull requests.  If you aren't familiar with git or don't know what I'm talking about, I will be happy to get with you to explain how to make this work.
+
+Sincerely, Joy Ittycheriah
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
