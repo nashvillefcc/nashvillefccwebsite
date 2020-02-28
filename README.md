@@ -1,8 +1,28 @@
+## This Read Me file updated on 2-28-2020 by Joy Ittycheriah
+
+## Location of Tickets and Project Status
+
+Please use the Issues tab on GitHub to request features or report bugs.  The Projects tab contains the current status of the code changes and updates to this project.
+
 ## How to Contribute
 
-For those who have volunteered to work with me on this project, please create a directory on your hard drive and then clone down the project.  Make sure to create a feature branch to work on (don't work on the Master copy please!). My feature branch names will be like this:  joy0227addimage (the 0227 is the date that I initiated that code).  Please name your branches in a similar pattern so that I can tell whose code, when it was generated and what feature you worked on when we are looking at your pull requests.  If you aren't familiar with git or don't know what I'm talking about, I will be happy to get with you to explain how to make this work.
+First of all, thank-you for wanting to contribute!  For those who have volunteered to work with me on this project, please create a directory on your hard drive and then clone down the project.  Make sure to create a feature branch to work on (don't work on the Master copy please!). My feature branch names will be like this:  joy0227addimage (the 0227 is the date that I initiated that code).  Please name your branches in a similar pattern so that I can tell whose code, when it was generated and what feature you worked on when we are looking at your pull requests.  If you aren't familiar with git or don't know what I'm talking about, I will be happy to get with you to explain how to make this work.
 
-Sincerely, Joy Ittycheriah
+Sincerely,
+
+Joy Ittycheriah
+
+## Contributors to this project
+
+If you are contributor to this project and don't see your name below, please add it and update the readme information on the very first line of this Read Me.
+
+Laura Pinnell [GitHub:  https://github.com/lapinell]
+Joy Ittycheriah [GitHub:  https://github.com/bestyoucanbe]
+Tyler Carpenter [GitHub:  https://github.com/TylerCarpenter92]
+
+----------------------------------------------------------------------------------------------------
+
+## Information Related to using the React framework
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -72,3 +92,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+----------------------------------------------------------------------------------------------------
