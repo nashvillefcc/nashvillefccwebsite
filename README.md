@@ -16,9 +16,9 @@ Joy Ittycheriah
 
 If you are contributor to this project and don't see your name below, please add it and update the readme information on the very first line of this Read Me.
 
-Laura Pinnell [GitHub:  https://github.com/lapinell]
-Joy Ittycheriah [GitHub:  https://github.com/bestyoucanbe]
-Tyler Carpenter [GitHub:  https://github.com/TylerCarpenter92]
+Laura Pinnell [GitHub:  https://github.com/lapinell]  
+Joy Ittycheriah [GitHub:  https://github.com/bestyoucanbe]  
+Tyler Carpenter [GitHub:  https://github.com/TylerCarpenter92]  
 
 ----------------------------------------------------------------------------------------------------
 
