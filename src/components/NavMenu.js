@@ -12,7 +12,7 @@ const NavMenu = () => {
         <div className="nav-menu hidden">
             <h1>freeCodeCamp Nashville</h1>
             <ul>
-                <li>About Us</li>
+                <li>About Us</li>               {/* Ideally these will be links/routes */}
                 <li>Events</li>
                 <li>Sponsor Us</li>
             </ul>

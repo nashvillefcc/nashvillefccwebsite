@@ -66,6 +66,10 @@ code {
   opacity: 1;
 }
 
+.nav-menu ul {
+  list-style-type: none;
+}
+
 .hidden{
   visibility: hidden;
   opacity: 0;
