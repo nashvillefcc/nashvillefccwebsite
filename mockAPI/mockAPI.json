@@ -1,5 +1,6 @@
 {
-    "0": {
+    "events":[
+    {
     "created": 1581433569000,
     "duration": 7200000,
     "id": "dczxqrybcgbcb",
@@ -48,7 +49,7 @@
     "visibility": "public",
     "member_pay_fee": false
     },
-    "1": {
+    {
     "created": 1564066893000,
     "duration": 5400000,
     "id": "kntpfrybcgbgb",
@@ -90,7 +91,7 @@
     "visibility": "public",
     "member_pay_fee": false
     },
-    "2": {
+    {
     "created": 1581433569000,
     "duration": 7200000,
     "id": "dczxqrybcgblb",
@@ -139,7 +140,7 @@
     "visibility": "public",
     "member_pay_fee": false
     },
-    "3": {
+    {
     "created": 1581433569000,
     "duration": 7200000,
     "id": "dczxqrybcgbtb",
@@ -188,7 +189,7 @@
     "visibility": "public",
     "member_pay_fee": false
     },
-    "4": {
+    {
     "created": 1581433569000,
     "duration": 7200000,
     "id": "dczxqrybcgbdc",
@@ -237,7 +238,7 @@
     "visibility": "public",
     "member_pay_fee": false
     },
-    "5": {
+    {
     "created": 1581433569000,
     "duration": 7200000,
     "id": "dczxqrybcgbmc",
@@ -286,4 +287,5 @@
     "visibility": "public",
     "member_pay_fee": false
     }
+]
 }
