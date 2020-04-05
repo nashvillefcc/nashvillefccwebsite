@@ -45,6 +45,7 @@ Laura Pinnell [GitHub:  https://github.com/lapinell]
 Joy Ittycheriah [GitHub:  https://github.com/bestyoucanbe]
 Tyler Carpenter [GitHub:  https://github.com/TylerCarpenter92]
 Christian Black [GitHub: https://github.com/blackcl3]
+James McClarty [Github: https://github.com/JamesMcClarty]
 Reid Fuhrman [GitHub: https://github.com/rjfuhrman42]
 
 ----------------------------------------------------------------------------------------------------

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 
 const NavMenu = () => {
 
@@ -11,11 +12,15 @@ const NavMenu = () => {
     return (
         <div className="nav-menu hidden">
             <h1>freeCodeCamp Nashville</h1>
-            <ul>
-                <li>About Us</li>               {/* Ideally these will be links/routes */}
-                <li>Events</li>
-                <li>Sponsor Us</li>
-            </ul>
+            <nav>
+                <ul>
+                    <li>About Us</li>               {/* Ideally these will be links/routes */}
+                    <Link className="nav-link" to="/events">
+                    Events
+                    </Link>
+                    <li>Sponsor Us</li>
+                </ul>
+            </nav>
         </div>
     )
 }
