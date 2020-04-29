@@ -9,8 +9,8 @@ const Heading = () => {
     }, 800)
 
     return (
-        <div className="main-header">
-            <h1>welcome to
+        <div className="main-header self-center content-center">
+            <h1 className="font-bold text-3xl content-center">Welcome to
                 <br></br>
                 FreeCodeCamp
                 <br></br>

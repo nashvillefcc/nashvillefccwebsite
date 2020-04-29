@@ -5,7 +5,7 @@ import NavMenu from "./NavMenu"
 const Box = () =>{
 
     return (
-        <div className="box">
+        <div className="box flex m-4 p-4">
             <Heading />
             <NavMenu />
         </div>
