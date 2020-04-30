@@ -15,11 +15,11 @@ const NavMenu = () => {
 
             <nav>
                 <ul className="flex justify-end">
-                    <Link className="flex nav-link pr-2">About Us</Link>               {/* Ideally these will be links/routes */}
+                    <li className="flex nav-link pr-2">About Us</li>               {/* Ideally these will be links/routes */}
                     <Link className="flex nav-link pr-2" to="/events">
                         Events
                     </Link>
-                    <Link className="flex nav-link">Sponsor Us</Link>
+                    <li className="flex nav-link">Sponsor Us</li>
                 </ul>
             </nav>
         </div>
