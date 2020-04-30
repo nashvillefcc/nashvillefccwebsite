@@ -11,10 +11,11 @@
     "react-html-parser": "^2.0.2",
     "react-render-html": "^0.6.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "tailwindcss": "^1.4.0"
   },
   "scripts": {
-    "build:style":"tailwind build src/styles/index.css -o src/styles/tailwind.css",
+    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
     "start": "npm run build:style && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -37,7 +38,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
-    "postcss-cli": "^7.1.1",
-    "tailwindcss": "^1.3.5"
+    "postcss-cli": "^7.1.1"
   }
 }

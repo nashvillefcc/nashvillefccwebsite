@@ -2,10 +2,10 @@ import React from "react"
 import Heading from "./Heading"
 import NavMenu from "./NavMenu"
 
-const Box = () =>{
+const Box = () => {
 
     return (
-        <div className="box flex m-4 p-4">
+        <div className="box flex m-5">
             <Heading />
             <NavMenu />
         </div>

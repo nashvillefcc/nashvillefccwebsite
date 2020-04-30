@@ -10,15 +10,15 @@ const NavMenu = () => {
     }, 2000)
 
     return (
-        <div className="nav-menu hidden flex">
-            <h1 className="font-bold text-3xl justify-start">freeCodeCamp Nashville</h1>
-            <nav className="flex space-x-10 justify-end p-3">
-                <ul className="items-end">
-                    <Link className="pr-3">About Us</Link>               {/* Ideally these will be links/routes */}
-                    <Link className="nav-link pr-3" to="/events">
-                    Events
+        <div className="nav-menu hidden flex inline text-center mt-1 pl-2">
+            <h1 className="flex text-4xl font-bold ">freeCodeCamp Nashville</h1>
+            <nav>
+                <ul className="flex justify-end text-center">
+                    <Link className="flex nav-link pr-2">About Us</Link>               {/* Ideally these will be links/routes */}
+                    <Link className="flex nav-link pr-2" to="/events">
+                        Events
                     </Link>
-                    <Link>Sponsor Us</Link>
+                    <Link className="flex nav-link">Sponsor Us</Link>
                 </ul>
             </nav>
         </div>
