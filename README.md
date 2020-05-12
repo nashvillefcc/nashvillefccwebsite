@@ -67,6 +67,9 @@ Reid Fuhrman [GitHub: https://github.com/rjfuhrman42]
 
 1.  The project was initiated with the Create React App command (https://github.com/facebook/create-react-app).
 2.  Then installed a package using the following command on the command line:  npm install --save react-render-html.
+3. Mockoon is used to create a mock server for the API. Simply import
+the mockoonAPI.json file into Mockoon and it will create a testable server
+to access the information as it were from an official API.
 
 ----------------------------------------------------------------------------------------------------
 
