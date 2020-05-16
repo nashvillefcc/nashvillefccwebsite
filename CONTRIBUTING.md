@@ -1,4 +1,4 @@
-# Contributing to Underground JS
+# Contributing to free Code Camp Nashville 2020 Website
 
 #### Table Of Contents
 
@@ -58,7 +58,7 @@ A. Add and Commit your existing branch. B. Checkout to the Master branch locally
 
 ### Questions about the source code?
 
-Feel free to ask [Hellrung](https://github.com/Hellrungj) or [lapinell](https://github.com/lapinell)
+Feel free to ask [bestyoucanbe](https://github.com/bestyoucanbe) or [Hellrung](https://github.com/Hellrungj) or [lapinell](https://github.com/lapinell)
 
 ### Branches
 
@@ -76,6 +76,7 @@ There must be a Pull Request or every change to repo.
 #### Note: Make sure you compare the nashvillefcc/UndergroundJS-Website Master Branch to Your Branch
 
 Assign [Hellrungj](https://github.com/Hellrungj) as Pull Request Reviewer
+Assign [bestyoucanbe](https://github.com/bestyoucanbe) as Pull Request Reviewer
 
 ---
 
