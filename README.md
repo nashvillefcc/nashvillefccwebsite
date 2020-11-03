@@ -1,4 +1,4 @@
-# Nashville free Code Camp 2020 Website
+# free Code Camp Nashville Website
 
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
