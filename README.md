@@ -38,16 +38,3 @@ npm start
 Review the following docs before diving in:
 - [CONTRIBUTING.md](CONTRIBUTING.md)
 - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
-
-### Contributors
-
-| Image                                                  | Name           | Role                                                            | Github                                     |  
-|--------------------------------------------------------|----------------|-----------------------------------------------------------------|--------------------------------------------|
-| <img src="https://github.com/lapinell.png?size=72" />  | Laura Pinell   | FCC Website Director                                 | [lapinell](https://github.com/lapinell)    |
-| <img src="https://github.com/bestyoucanbe.png?size=72" />  | Joy Ittycheriah   | FCC Website Ex-Project Manager / Developer | [bestyoucanbe](https://github.com/bestyoucanbe)    |
-| <img src="https://github.com/Hellrungj.png?size=72" /> | John Hellrung  | FCC Website Assistant Project Manager/ FFC Website Lead Developer     | [Hellrungj](https://github.com/Hellrungj/) |
-| <img src="https://github.com/lnbailey.png?size=72" />  | Ellen Bailey   | FCC Website Assistant Project Manager / FFC Website Lead/Chief UI/UX Design | [lnbailey](https://github.com/lnbailey)    |
-| <img src="https://github.com/TylerCarpenter92.png?size=72" />  | Tyler Carpenter   | FCC Website Developer | [TylerCarpenter92](https://github.com/TylerCarpenter92)    |
-| <img src="https://github.com/blackcl3.png?size=72" />  | Christian Black   | FCC Website Developer | [blackcl3](https://github.com/blackcl3)    |
-| <img src="https://github.com/JamesMcClarty.png?size=72" />  | James McClarty   | FCC Website Developer | [JamesMcClarty](https://github.com/JamesMcClarty)    |
-| <img src="https://github.com/rjfuhrman42.png?size=72" />  | Reid Fuhrman    | FCC Website Developer | [rjfuhrman42]( https://github.com/rjfuhrman42)    |
