@@ -1,85 +1,71 @@
-# Contributing to free Code Camp Nashville 2020 Website
+# Contributing
 
-#### Table Of Contents
+When contributing to this repository, please notify us first before assigning yourself to the ticket. We can be contacted via Discord or GitHub. See the [task board](https://github.com/nashvillefcc/mentor-night-site/projects/1) for a list of features and bugs we're working on.
 
-[Code of Conduct](CODE_OF_CONDUCT.md)
+## Git Conventions
 
-[What should I know before I get started?](#what-should-i-know-before-i-get-started?)
+Development to the `master` branch is locked. Code changes should be introduced through feature branches and reviewed through a pull request. A short primer can be found here: [https://guides.github.com/introduction/flow/](https://guides.github.com/introduction/flow/).
 
-[How to Contribute Code on this Project?](#how-to-contribute-code-on-this-project?)
+We will not be enforcing a naming convention for branch names, but please keep them descriptive or related to the feature that you worked on.
 
-[Coding Guidelines/Remarks](#coding-guidelines/remarks)
+## Review Process
 
-* [Questions about the source code?](#questions-about-the-source-code?) 
+When an issue is complete and ready for review, please create a pull request from your feature branch to our `develop` branch. Each issue should correspond to a single pull request. We require at least 2 approvals from other developers, and 1 of those must be a senior developer.
 
-* [Branches](#branches)
+You can use the following template for your PR description:
 
-* [Pull Requests](#pull-requests)
+```txt
+Resolves #[Replace with issue number]
+# Description of Changes
+[Replace with description of what you changed or introduced. Developers should be able to read this and the Files Changed section and have a good understanding of what this PR is about.]
 
-[List of Contributors](README.md)
-
----
-
-## What should I know before I get started?
-
-- [React](https://reactjs.org/)
-
-### Note: This done mean you need to expect but basic understanding and experience will work.
-
-## How to Contribute Code on this Project
-
-First of all, thank-you for wanting to contribute! For those who have volunteered to work with me on this project, please create a directory on your hard drive and then clone down the project. Make sure to create a feature branch to work on (don't work on the Master copy please!). My feature branch names will be like this: joy0227addimage (the 0227 is the date that I initiated that code). Please name your branches in a similar pattern so that I can tell whose code, when it was generated and what feature you worked on when we are looking at your pull requests. If you aren't familiar with git or don't know what I'm talking about, I will be happy to get with you to explain how to make this work.
-
-Sincerely,
-
-Joy Ittycheriah
-
-## Coding Guidelines/Remarks
-
-Anyone can contribute to this Freecodecamp website but you must first get permission from a Project Director or Project Manager. When approved, you will be added to a NashvilleFCC2020WebDevs Team that has been put together to develop and maintain the site.
-
-To request features/report bugs/better the UI/UX use the issues tab on GitHub to add a new issue.
-
-One review is Required on pull requests to be merged to master. Currently, the only people allowed to dismiss pull requests/merge to master are: Laura Pinell, John Hellrung or Joy Ittycheriah. To minimize merge conflicts, please inform the team in the Discord Channel set-up for this project (#2020-fcc-nashville-website) when you/we have a new Master. In addition, please inform the team on this Discord channel when you have a pull request waiting as well. To access the correct Discord Server, use: https://discord.gg/gugduRM
-
-Some tickets have been completed. More tickets are forthcoming. If you select a ticket from the To Do column, please click the right upper corner of the card/note, choose and add your name as the person working on the ticket and click save. Then move the card/note to the In Progress column by dragging the card/note. In addition, you can assign yourself to any item in the Backlog column by clicking on the link, scrolling down to Assignees and adding your name. Thanks!
-
-The backlog column may contain items that may be too large to finish as a single ticket item. Therefore, it is HIGHLY recommended that you initiate multiple tickets for any single item in the backlog column. When ALL tickets related to the Backlog item in question have been completed, then the item in the Backlog column can be moved directly to the completed column as well. This, of course, means that no items from backlog column should be moved to the Completed column without making sure that all sub-items related to it have been completed first.
-
-Please add comments (within your codebase) on each section of code BEFORE you pull request it so that a reviewer can do a better job of reviewing/understanding your code and approving it. The word "section" in the previous sentence is subjective. In addition, add in-line comments within your code when possible to explain hard-to-understand concepts or anything that may confuse a future code reviewer/maintainer.
-
-Fix merge conflicts LOCALLY before you push up a branch and place a pull request on the branch. If you have fixed merge conflicts or have other related comments on the pull request, please enter detailed comments on it when requesting the pull request on the branch. Of course, if you have merge conflicts you were not expecting or don't know which version to keep/throw away, it is best to resolve that through communication on our Discord channel before you commit and push up a branch.
-
-Just as importantly, make sure that you have merged the most up-to-date master branch into your branch and checked for conflicts before you push up a branch.
-
-By fixing merge conflicts LOCALLY (see above), I mean that:
-
-A. Add and Commit your existing branch. B. Checkout to the Master branch locally. C. Pull down the latest Master. D. Checkout to your branch. E. Type "git merge master" F. Type code . to review any potential merge conflicts. (Assuming you are using VS Code as your Interactive Development Environment)
-
-### Questions about the source code?
-
-Feel free to ask [bestyoucanbe](https://github.com/bestyoucanbe) or [Hellrung](https://github.com/Hellrungj) or [lapinell](https://github.com/lapinell)
-
-### Branches
-
-Branches name should be named with the follow standard:
-```
-Ticket Number -> Ticket Name
-
-Examle: 01_Update_README
+## How Can I Test This?
+[Replace with instructions for another developer to quickly test our your new code. If they need to copy/paste code from here to get it working, provide the code below in brackets.]
 ```
 
-### Pull Requests
+Once the pull request is generated and ready for review, please notify the team on Discord.
 
-There must be a Pull Request or every change to repo.
+## Code of Conduct
 
-#### Note: Make sure you compare the nashvillefcc/UndergroundJS-Website Master Branch to Your Branch
+In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-Assign [Hellrungj](https://github.com/Hellrungj) as Pull Request Reviewer
-Assign [bestyoucanbe](https://github.com/bestyoucanbe) as Pull Request Reviewer
+### Our Standards
 
----
+Examples of behavior that contributes to creating a positive environment include:
 
-Thank you for taking the time to contribute! :heart:
+- Using welcoming and inclusive language
+- Being respectful of differing viewpoints and experiences
+- Gracefully accepting constructive criticism
+- Focusing on what is best for the community
+- Showing empathy towards other community members
 
-FCC Website Team
+Examples of unacceptable behavior by participants include:
+
+- The use of sexualized language or imagery and unwelcome sexual attention or advances
+- Trolling, insulting/derogatory comments, and personal or political attacks
+- Public or private harassment
+- Publishing others' private information, such as a physical or electronic address, without explicit permission
+- Other conduct which could reasonably be considered inappropriate in a professional setting
+
+### Our Responsibilities
+
+Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
+
+Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
+
+### Scope
+
+This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.
+
+### Enforcement
+
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
+
+Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
+
+### Attribution
+
+This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4, available at [http://contributor-covenant.org/version/1/4][version]
+
+[homepage]: http://contributor-covenant.org
+[version]: http://contributor-covenant.org/version/1/4/
