@@ -1,17 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700;900&display=swap%27');
+
 /*! purgecss start ignore */
 @tailwind base;
 @tailwind components;
 /*! purgecss end ignore */
 @tailwind utilities;
 
-a {
+/* a {
   @apply font-semibold underline text-blue-500;
 }
 
 a:hover {
   @apply text-blue-700;
+} */
+
+.logo {
+  @apply w-32 px-4;
 }
 
-ul {
-  list-style: inside;
+.burgerIcon {
+  @apply w-10 h-10 fill-current;
+}
+
+.navBar {
+  @apply flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto;
+}
+
+.navMenu {
+  @apply w-full;  
+}
+
+.navMenuItems {
+  @apply block mt-4 text-FCCgray-200 no-underline;
+}
+
+.navMenuItems ul {
+  @apply list-inside;
+}
+
+.menuButton {
+  @apply px-4 py-2 text-FCCgray-100 border border-white rounded ;
+}
+
+@screen md {
+  .navBar {
+    @apply p-8;
+  }
+  .navMenu {
+    @apply flex items-center w-auto; 
+  }
+  .navMenuItems {
+    @apply inline-block mt-0 ml-6;
+  }
+  .navMenuButton {
+    @apply hidden;
+  }
+  body {
+    @apply bg-FCCblue-100;
+  }
 }
