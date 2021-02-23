@@ -15,15 +15,20 @@ a:hover {
 } */
 
 .logo {
-  @apply w-32 px-4;
+  @apply absolute w-32 h-20 ml-16 mt-8 left-0 top-0;
+}
+
+.cls-2 {
+  font-weight: 400 !important;
+  transform: translate(65px, 180px);
 }
 
 .burgerIcon {
-  @apply w-10 h-10 fill-current;
+  @apply w-10 h-6 mr-16 mt-16 fill-current;
 }
 
 .navBar {
-  @apply flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto;
+  @apply flex flex-wrap items-center justify-between max-w-4xl mx-auto;
 }
 
 .navMenu {
@@ -31,7 +36,11 @@ a:hover {
 }
 
 .navMenuItems {
-  @apply block mt-4 text-FCCgray-200 no-underline;
+  @apply block mt-4 font-medium text-FCCgray-200 no-underline font-MyFont text-xl uppercase;
+}
+
+.navMenuItems:hover {
+  @apply text-FCCblue-200;
 }
 
 .navMenuItems ul {
@@ -43,11 +52,14 @@ a:hover {
 }
 
 @screen md {
+  .logo {
+    @apply h-32 w-48 ml-16 mt-8;
+  }
   .navBar {
-    @apply p-8;
+    @apply px-8;
   }
   .navMenu {
-    @apply flex items-center w-auto; 
+    @apply flex items-center w-auto py-10; 
   }
   .navMenuItems {
     @apply inline-block mt-0 ml-6;
