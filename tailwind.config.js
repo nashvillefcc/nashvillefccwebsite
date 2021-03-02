@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'nunito': ['Pacifico', 'cursive'],
-        'MyFont': ['Roboto', 'sans-serif'] // Ensure fonts with spaces have " " surrounding it.
+        'Pacifico': ['Pacifico', 'cursive'],
+        'Roboto': ['Roboto', 'sans-serif'] // Ensure fonts with spaces have " " surrounding it.
       },
       colors: {
         FCCorange: '#F68B1F',

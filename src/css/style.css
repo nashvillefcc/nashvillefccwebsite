@@ -36,7 +36,7 @@ a:hover {
 }
 
 .navMenuItems {
-  @apply block mt-4 font-medium text-FCCgray-200 no-underline font-MyFont text-xl uppercase;
+  @apply block mt-4 font-medium text-FCCgray-200 no-underline font-Roboto text-xl uppercase;
 }
 
 .navMenuItems:hover {
