@@ -1,6 +1,6 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import React, { useState } from 'react';
-import FCCLogo from "../assets/FCC-Nashville-blue-logo.svg"
+import FCCLogo from '../assets/FCC-Nashville-blue-logo.svg';
 
 
 function Header() {
@@ -51,7 +51,7 @@ function Header() {
               title: `About`,
             },
             {
-              route: `/code_of_conduct`,
+              route: `/code-of-conduct`,
               title: `Code Of Conduct`,
             },
           ].map(link => (

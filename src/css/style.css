@@ -18,7 +18,7 @@ a:hover {
   @apply absolute w-32 h-20 ml-16 mt-8 left-0 top-0;
 }
 
-.cls-2 {
+.logo .cls-2 {
   font-weight: 400 !important;
   transform: translate(65px, 180px);
 }
