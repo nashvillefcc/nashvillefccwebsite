@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Header from './header';
+import Footer from './footer';
 
 function Layout({ children }) {
   return (
@@ -10,12 +11,7 @@ function Layout({ children }) {
 
       <main className="flex-1">{children}</main>
 
-      <footer className="bg-blue-700">
-        <nav className="flex justify-between max-w-5xl p-4 mx-auto text-sm md:p-8">
-          <p className="text-white">This is a footer.</p>
-          <p className="text-white">We have no use for it yet!</p>
-        </nav>
-      </footer>
+      <Footer />
     </div>
   );
 }
