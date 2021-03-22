@@ -1,3 +1,9 @@
-.profilePhoto {
-  clip-path: circle(100px at center);
-}
+/*!
+Technical debt: importing tailwind into a module creates
+another huge CSS file, we'll need to clean that up.
+*/
+/*
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*/

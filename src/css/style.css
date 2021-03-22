@@ -6,13 +6,52 @@
 /*! purgecss end ignore */
 @tailwind utilities;
 
-/* a {
-  @apply font-semibold underline text-blue-500;
+.main-section {
+  @apply w-full py-20;
 }
 
-a:hover {
-  @apply text-blue-700;
-} */
+.main-section-content {
+  @apply w-full max-w-6xl px-4 mx-auto;
+}
+
+.main-section-index-1 {
+  @apply flex flex-col-reverse font-Roboto text-FCCgray-200;
+}
+
+.main-section-index-1 h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  @apply mb-5 font-bold;
+}
+
+.main-section-index-1 p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.FCC-divider {
+  @apply w-full text-center text-white py-8 bg-FCCblue-200;
+}
+
+.FCC-divider h2 {
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+  @apply inline-block font-bold font-Roboto;
+}
+
+@screen md {
+  .main-section-index-1 {
+    @apply flex-row;
+  }
+  .main-section-index-1 h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .FCC-divider h2 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
 
 .logo {
   @apply absolute w-32 h-20 ml-16 mt-8 left-0 top-0;
@@ -28,11 +67,11 @@ a:hover {
 }
 
 .navBar {
-  @apply flex flex-wrap items-center justify-between max-w-4xl mx-auto;
+  @apply flex flex-wrap items-center justify-between max-w-5xl mx-auto;
 }
 
 .navMenu {
-  @apply w-full;  
+  @apply w-full;
 }
 
 .navMenuItems {
@@ -48,7 +87,7 @@ a:hover {
 }
 
 .menuButton {
-  @apply px-4 py-2 text-FCCgray-100 border border-white rounded ;
+  @apply px-4 py-2 text-FCCgray-100 border border-white rounded;
 }
 
 @screen md {
@@ -59,15 +98,12 @@ a:hover {
     @apply px-8;
   }
   .navMenu {
-    @apply flex items-center w-auto py-10; 
+    @apply flex items-center w-auto py-10;
   }
   .navMenuItems {
     @apply inline-block mt-0 ml-6;
   }
   .navMenuButton {
     @apply hidden;
-  }
-  body {
-    @apply bg-FCCblue-100;
   }
 }
