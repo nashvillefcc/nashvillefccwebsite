@@ -1,6 +1,30 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
-import React, { useState } from 'react';
-import FCCLogo from '../assets/FCC-Nashville-blue-logo.svg';
+import React, { useState, useEffect  } from 'react';
+import BlueFCCLogo from '../assets/FCC-Nashville-blue-logo.svg';
+import OrangeFCCLogo from '../assets/FCC-Nashville-orange-logo.svg';
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+}
+
+function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return windowDimensions;
+}
 
 
 function Header() {
@@ -14,13 +38,20 @@ function Header() {
       }
     }
   `);
+  const { width } = useWindowDimensions();
+  
+  const logo = (w) => {
+    if (w < 768) return < OrangeFCCLogo className="logo" alt={`${site.siteMetadata.title} Logo`} />
+    return < BlueFCCLogo className="logo" alt={`${site.siteMetadata.title} Logo`} />
+  }     
 
   return (
     <header className="bg-white">
       <div className="navBar">
         <Link to="/">
-          <FCCLogo className="logo" alt={`${site.siteMetadata.title} Logo`}/>
+          {logo(width)}
         </Link>
+        
 
         <button
           className="navMenuButton"
