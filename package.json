@@ -1,5 +1,5 @@
 {
-  "name": "mentor-night-site",
+  "name": "free-code-camp-nashville-site",
   "description": "Public site for mentor night group",
   "version": "1.0.0",
   "author": "Pete Hurl <moribundmedium@gmail.com> (https://github.com/MoribundMedium)",
@@ -51,6 +51,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nashvillefcc/mentor-night-site"
+    "url": "https://github.com/nashvillefcc/nashvillefcc2020website"
   }
 }

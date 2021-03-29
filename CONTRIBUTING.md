@@ -1,6 +1,6 @@
 # Contributing
 
-When contributing to this repository, please notify us first before assigning yourself to the ticket. We can be contacted via Discord or GitHub. See the [task board](https://github.com/nashvillefcc/mentor-night-site/projects/1) for a list of features and bugs we're working on.
+When contributing to this repository, please notify us first before assigning yourself to the ticket. We can be contacted via Discord or GitHub. See the [task board](https://github.com/nashvillefcc/nashvillefcc2020website/projects/4) for a list of features and bugs we're working on.
 
 ## Git Conventions
 

@@ -1,6 +1,6 @@
-# Nashville's Mentor Night Site
+# Free Code Camp Nashville Site
 
-This is the source code for our group's upcoming public Web site. Development mostly happens in the `/src` folder, while the build files are in the `/docs` folder. Old, archived progress for this project is located [at this repository](https://github.com/nashvillefcc/nashvillefcc2020website). Since we moved to Gatsby, all progress has been logged on this repository.
+This is the source code for our group's upcoming public Web site. Development mostly happens in the `/src` folder, while the build files are in the `/docs` folder.
 
 ## Built With
 
@@ -30,9 +30,9 @@ If you are using VS Code, we have recommended extensions listed in the `mentor-n
 
 ## Contributing
 
-When contributing to this repository, please notify us first before assigning yourself to the ticket. We can be contacted via Discord or GitHub. See the [task board](https://github.com/nashvillefcc/mentor-night-site/projects/1) for a list of features and bugs we're working on.
+When contributing to this repository, please notify us first before assigning yourself to the ticket. We can be contacted via Discord or GitHub. See the [task board](https://github.com/nashvillefcc/nashvillefcc2020website/projects/4) for a list of features and bugs we're working on.
 
-See the [CONTRIBUTING](https://github.com/nashvillefcc/mentor-night-site/blob/master/CONTRIBUTING.md) page for more details.
+See the [CONTRIBUTING](https://github.com/nashvillefcc/nashvillefcc2020website/blob/master/CONTRIBUTING.md) page for more details.
 
 ## Contact
 
