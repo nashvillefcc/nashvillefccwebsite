@@ -26,7 +26,7 @@ From the command line, you can run:
 - `npm run fix` - Run Prettier and ESLint with the `--fix` option.
 - `npm run test` - TODO: https://gatsby.dev/unit-testing\
 
-If you are using VS Code, we have recommended extensions listed in the `mentor-night-site.code-workspace` file. VS Code will automatically detect that list and prompt you to install.
+If you are using VS Code, we have recommended extensions listed in the `free-code-camp-nashville.code-workspace` file. VS Code will automatically detect that list and prompt you to install.
 
 ## Contributing
 

@@ -1,31 +1,7 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
-import React, { useState, useEffect  } from 'react';
+import React, { useState  } from 'react';
 import BlueFCCLogo from '../assets/FCC-Nashville-blue-logo.svg';
 import OrangeFCCLogo from '../assets/FCC-Nashville-orange-logo.svg';
-
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height
-  };
-}
-
-function useWindowDimensions() {
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  return windowDimensions;
-}
-
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -38,10 +14,9 @@ function Header() {
       }
     }
   `);
-  const { width } = useWindowDimensions();
-  
-  const logo = (w) => {
-    if (w < 768) return < OrangeFCCLogo className="logo" alt={`${site.siteMetadata.title} Logo`} />
+
+  const logo = (path) => {
+    if (path !== '/') return < OrangeFCCLogo className="logo" alt={`${site.siteMetadata.title} Logo`} />
     return < BlueFCCLogo className="logo" alt={`${site.siteMetadata.title} Logo`} />
   }     
 
@@ -49,9 +24,8 @@ function Header() {
     <header className="bg-white">
       <div className="navBar">
         <Link to="/">
-          {logo(width)}
+            {logo(location.pathname)}
         </Link>
-        
 
         <button
           className="navMenuButton"

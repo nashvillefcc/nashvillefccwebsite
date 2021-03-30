@@ -16,7 +16,7 @@ function AboutPage() {
 
       <section className="text-center mb-16">
         <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-          Mentor Night Site
+          Free Code Camp Nashville
         </h2>
 
         <p className="text-left leading-loose">
