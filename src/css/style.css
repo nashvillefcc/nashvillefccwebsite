@@ -1,17 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700;900&display=swap%27');
+
 /*! purgecss start ignore */
 @tailwind base;
 @tailwind components;
 /*! purgecss end ignore */
 @tailwind utilities;
 
-a {
+/* a {
   @apply font-semibold underline text-blue-500;
 }
 
 a:hover {
   @apply text-blue-700;
+} */
+
+.logo {
+  @apply absolute w-32 h-20 ml-16 mt-8 left-0 top-0;
 }
 
-ul {
-  list-style: inside;
+.logo .cls-2 {
+  font-weight: 400 !important;
+  transform: translate(65px, 180px);
+}
+
+.burgerIcon {
+  @apply w-10 h-6 mr-16 mt-16 fill-current;
+}
+
+.navBar {
+  @apply flex flex-wrap items-center justify-between max-w-4xl mx-auto;
+}
+
+.navMenu {
+  @apply w-full;  
+}
+
+.navMenuItems {
+  @apply block mt-4 font-medium text-FCCgray-200 no-underline font-Roboto text-xl uppercase;
+}
+
+.navMenuItems:hover {
+  @apply text-FCCblue-200;
+}
+
+.navMenuItems ul {
+  @apply list-inside;
+}
+
+.menuButton {
+  @apply px-4 py-2 text-FCCgray-100 border border-white rounded ;
+}
+
+@screen md {
+  .logo {
+    @apply h-32 w-48 ml-16 mt-8;
+  }
+  .navBar {
+    @apply px-8;
+  }
+  .navMenu {
+    @apply flex items-center w-auto py-10; 
+  }
+  .navMenuItems {
+    @apply inline-block mt-0 ml-6;
+  }
+  .navMenuButton {
+    @apply hidden;
+  }
+  body {
+    @apply bg-FCCblue-100;
+  }
 }

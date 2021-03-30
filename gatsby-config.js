@@ -4,10 +4,10 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Nashville freeCodeCamp Mentor Night`,
+    title: `freeCodeCamp Nashville`,
     description: `A meetup for developers, designers, and students in Middle Tennessee involved in the freeCodeCamp.com learning community`,
   },
-  pathPrefix: '/mentor-night-site',
+  pathPrefix: '/free-code-camp-nashville',
   plugins: [
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
@@ -16,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `mentor-night-site`,
-        short_name: `mentor-night-site`,
+        name: `free-code-camp-nashville`,
+        short_name: `free-code-camp-nashville`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.teal['400'],
@@ -47,6 +47,14 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/
+        }
+      }
+    },
 
     // TODO: more plugins
     // {

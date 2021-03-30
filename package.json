@@ -1,6 +1,6 @@
 {
-  "name": "mentor-night-site",
-  "description": "Public site for mentor night group",
+  "name": "free-code-camp-nashville-site",
+  "description": "Public site for free code camp nashville",
   "version": "1.0.0",
   "author": "Pete Hurl <moribundmedium@gmail.com> (https://github.com/MoribundMedium)",
   "contributors": [],
@@ -11,6 +11,7 @@
     "gatsby-plugin-offline": "3.2.20",
     "gatsby-plugin-postcss": "2.3.11",
     "gatsby-plugin-react-helmet": "3.3.10",
+    "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.6.22",
     "gatsby-source-filesystem": "^2.3.23",
     "gatsby-transformer-sharp": "^2.5.12",
@@ -50,6 +51,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nashvillefcc/mentor-night-site"
+    "url": "https://github.com/nashvillefcc/nashvillefcc2020website"
   }
 }

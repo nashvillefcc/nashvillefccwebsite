@@ -1,5 +1,7 @@
-import { graphql, useStaticQuery, Link } from 'gatsby';
-import React, { useState } from 'react';
+import { Link, useStaticQuery, graphql } from 'gatsby';
+import React, { useState  } from 'react';
+import BlueFCCLogo from '../assets/FCC-Nashville-blue-logo.svg';
+import OrangeFCCLogo from '../assets/FCC-Nashville-orange-logo.svg';
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -13,23 +15,24 @@ function Header() {
     }
   `);
 
+  const logo = (path) => {
+    if (path !== '/') return < OrangeFCCLogo className="logo" alt={`${site.siteMetadata.title} Logo`} />
+    return < BlueFCCLogo className="logo" alt={`${site.siteMetadata.title} Logo`} />
+  }     
+
   return (
-    <header className="bg-teal-700">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
+    <header className="bg-white">
+      <div className="navBar">
         <Link to="/">
-          <h1 className="flex items-center text-white no-underline">
-            <span className="text-xl font-bold tracking-tight">
-              {site.siteMetadata.title}
-            </span>
-          </h1>
+            {logo(location.pathname)}
         </Link>
 
         <button
-          className="flex items-center block px-3 py-2 text-white border border-white rounded md:hidden"
+          className="navMenuButton"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg
-            className="w-3 h-3 fill-current"
+            className="burgerIcon"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -41,32 +44,24 @@ function Header() {
         <nav
           className={`${
             isExpanded ? `block` : `hidden`
-          } md:block md:flex md:items-center w-full md:w-auto`}
+          } navMenu`}
         >
           {[
             {
+              route: `/`,
+              title: `Home`,
+            },
+            {
               route: `/about`,
-              title: `About Us`,
+              title: `About`,
             },
             {
-              route: `/events`,
-              title: `Events`,
-            },
-            {
-              route: `/blog`,
-              title: `Blog`,
-            },
-            {
-              route: `/projects`,
-              title: `Projects`,
-            },
-            {
-              route: `/sponsors`,
-              title: `Sponsors`,
+              route: `/code-of-conduct`,
+              title: `Code Of Conduct`,
             },
           ].map(link => (
             <Link
-              className="block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6"
+              className="navMenuItems"
               key={link.title}
               to={link.route}
             >
