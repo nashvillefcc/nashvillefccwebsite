@@ -27,26 +27,26 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-ec85fc50e79d82ac12cf.js"
+    "url": "webpack-runtime-ed0cead447352898cce2.js"
   },
   {
-    "url": "styles.112b59b41fcdd8b5c600.css"
+    "url": "styles.b60a2286154e6e49cd8f.css"
   },
   {
-    "url": "styles-c2fe8482057191dca484.js"
+    "url": "styles-e9d24b1846c7d6eb9685.js"
   },
   {
-    "url": "framework-376edee25eb5f5cd8260.js"
+    "url": "framework-29ba174b433dc5858bed.js"
   },
   {
-    "url": "app-d1664629b3cd5de1ebf5.js"
+    "url": "app-d00428bda6da7143e4cf.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "2b12fcd779c9c7104d94a054dc9169b7"
+    "revision": "5e2f150f5ada23264e8b722831263bff"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-0097d26fbd474b34ff9b.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-47c8d8b7529f7a984452.js"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -54,14 +54,14 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "e93e1dec265569bd997a6a61117e6240"
+    "revision": "ad60eb546837a40d64488482c51d6df9"
   },
   {
-    "url": "polyfill-118cb73b15f8ba765669.js"
+    "url": "polyfill-3d2d61991ee6e37e36f7.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "ba554799ecd21ce210f31a41daf8f2cd"
+    "revision": "cf8c304f4e3c97aef0759229f4af4b98"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -149,12 +149,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/mentor-night-site`), ``)
+  pathname = pathname.replace(new RegExp(`^/free-code-camp-nashville`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/mentor-night-site/app-d1664629b3cd5de1ebf5.js`))) {
+  if (!resources || !(await caches.match(`/free-code-camp-nashville/app-d00428bda6da7143e4cf.js`))) {
     return await fetch(event.request)
   }
 
@@ -167,7 +167,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/mentor-night-site/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/free-code-camp-nashville/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
