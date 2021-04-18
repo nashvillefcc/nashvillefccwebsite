@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import CommunityLogo from '../assets/Community-Learning.svg';
-
+import EventCard from '../components/event-card';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import mockEvents from '../mock-data/mockEvents';
 
 function IndexPage() {
+  const [upcomingEvents, setUpcomingEvents] = useState([]);
+
+  useEffect(() => {
+    const getEvents = async () => {
+      setUpcomingEvents(mockEvents);
+    };
+    getEvents();
+  }, []);
+
   return (
     <Layout>
       <SEO keywords={[`nashville`, `freecodecamp`]} title="Home" />
@@ -45,27 +55,11 @@ function IndexPage() {
       </section>
 
       <section className="main-section">
-        <div className="main-section-content grid grid-cols-3 gap-2">
-          <div className="p-4 border-2 border-gray-400">
-            <p className="text-xl font-bold">(This section is a WIP)</p>
-            <p className="italic">Meetup Title</p>
-            <p>
-              <a href="#">Meetup Location</a>
-            </p>
-          </div>
-          <div className="p-4 border-2 border-gray-400">
-            <p className="text-xl font-bold">Meetup Date/Time</p>
-            <p className="italic">Meetup Title</p>
-            <p>
-              <a href="#">Meetup Location</a>
-            </p>
-          </div>
-          <div className="p-4 border-2 border-gray-400">
-            <p className="text-xl font-bold">Meetup Date/Time</p>
-            <p className="italic">Meetup Title</p>
-            <p>
-              <a href="#">Meetup Location</a>
-            </p>
+        <div className="main-section-content md:max-w-full md:px-12">
+          <div className="px-8 grid grid-rows-2 gap-12 md:grid-cols-3 md:grid-rows-none md:p-0">
+            {upcomingEvents.map(e => {
+              return <EventCard key={e.id} event={e} />;
+            })}
           </div>
         </div>
       </section>
