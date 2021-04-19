@@ -101,7 +101,7 @@
 }
 
 footer {
-  height: 30em;
+  height: 25em;
 }
 
 .footerNav {
@@ -110,18 +110,38 @@ footer {
 
 .socials {
   height: 40%;
-  @apply flex flex-row w-full bg-FCCblue-100 border-t border-FCCblue-200;
+  @apply flex flex-row justify-center items-center  w-full bg-FCCblue-100 border-t border-FCCblue-200 text-4xl;
+}
+
+.socials a {
+  @apply mx-2;
 }
 
 .emailAndCopyright {
   height: 60%;
-  @apply flex flex-col top-0 bg-FCCblue-200;
+  @apply flex flex-col justify-center items-center top-0 bg-FCCblue-200 text-white font-medium font-sans;
+}
+
+.emailAndCopyright a {
+  @apply my-8;
+}
+
+.emailLink {
+  @apply flex flex-row items-center justify-evenly;
+}
+
+.emailName {
+  @apply text-lg;
 }
 
 .connectLogo {
-  transform: translateY(-7.45em);
+  position: absolute;
+  transform: translateY(-4em);
   margin-left: 1em;
   width: 17em;
+  justify-self: normal;
+  font-size: 0.925rem;
+  font-weight: 300;
 }
 
 @screen md {
@@ -140,11 +160,49 @@ footer {
   .navMenuButton {
     @apply hidden;
   }
+
+  footer {
+    height: 32em;
+  }
+
+  .socials {
+    font-size: 80px;
+  }
+
+  .socials a {
+    @apply mx-6;
+  }
+
   .socials,
   .emailAndCopyright {
     height: 50%;
   }
+
+  .emailAndCopyright {
+    @apply flex flex-row justify-around items-center;
+  }
+
+  .emailLink {
+    @apply justify-start;
+  }
+
+  .emailName {
+    @apply pl-4;
+  }
+
+  .connectLogo {
+    transform: translateY(-6.35em);
+    margin-left: 4em;
+    width: 27em;
+  }
+
   body {
     @apply bg-FCCblue-100;
+  }
+}
+
+@screen xl {
+  .socials a {
+    @apply mx-16;
   }
 }

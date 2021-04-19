@@ -5,6 +5,10 @@
   "author": "Pete Hurl <moribundmedium@gmail.com> (https://github.com/MoribundMedium)",
   "contributors": [],
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "gatsby": "^2.25.3",
     "gatsby-image": "^2.4.14",
     "gatsby-plugin-manifest": "2.4.21",
