@@ -47,7 +47,9 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: 'og:image',
-          content: new URL(site.siteMetadata.baseUrl + '/mnsCard.png'),
+          content: new URL(
+            site.siteMetadata.baseUrl + '/embedPreviewImage.jpg'
+          ),
         },
         {
           name: 'twitter:card',
@@ -63,7 +65,9 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: 'twitter:image',
-          content: new URL(site.siteMetadata.baseUrl + '/mnsCard.png'),
+          content: new URL(
+            site.siteMetadata.baseUrl + '/embedPreviewImage.jpg'
+          ),
         },
         {
           name: 'twitter:creator',
