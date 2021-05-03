@@ -9,7 +9,6 @@ module.exports = {
     baseUrl: 'https://fcc-nashville.netlify.app',
     // TODO: Update baseUrl to new domain name once we migrate there
   },
-  pathPrefix: '/free-code-camp-nashville',
   plugins: [
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
