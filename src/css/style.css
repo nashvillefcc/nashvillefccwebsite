@@ -201,8 +201,8 @@ footer {
   }
 }
 
-@screen xl {
+/* @screen xl {
   .socials a {
     @apply mx-16;
   }
-}
+} */
