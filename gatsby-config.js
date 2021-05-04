@@ -6,8 +6,8 @@ module.exports = {
   siteMetadata: {
     title: `freeCodeCamp Nashville`,
     description: `A meetup for developers, designers, and students in Middle Tennessee involved in the freeCodeCamp.com learning community`,
-    baseUrl: 'https://nashvillefcc.github.io/mentor-night-site',
-    // TODO: Update baseUrl to Netlify once we migrate there
+    baseUrl: 'https://fcc-nashville.netlify.app',
+    // TODO: Update baseUrl to new domain name once we migrate there
   },
   pathPrefix: '/free-code-camp-nashville',
   plugins: [
