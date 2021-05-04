@@ -1,5 +1,5 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
-import React, { useState  } from 'react';
+import React, { useState } from 'react';
 import BlueFCCLogo from '../assets/FCC-Nashville-blue-logo.svg';
 import OrangeFCCLogo from '../assets/FCC-Nashville-orange-logo.svg';
 
@@ -15,17 +15,25 @@ function Header() {
     }
   `);
 
-  const logo = (path) => {
-    if (path !== '/') return < OrangeFCCLogo className="logo" alt={`${site.siteMetadata.title} Logo`} />
-    return < BlueFCCLogo className="logo" alt={`${site.siteMetadata.title} Logo`} />
-  }     
+  const currentPathname =
+    typeof window !== `undefined` ? window.location.pathname : '/';
+  const logo = path => {
+    if (path !== '/')
+      return (
+        <OrangeFCCLogo
+          className="logo"
+          alt={`${site.siteMetadata.title} Logo`}
+        />
+      );
+    return (
+      <BlueFCCLogo className="logo" alt={`${site.siteMetadata.title} Logo`} />
+    );
+  };
 
   return (
     <header className="bg-white">
       <div className="navBar">
-        <Link to="/">
-            {logo(location.pathname)}
-        </Link>
+        <Link to="/">{logo(currentPathname)}</Link>
 
         <button
           className="navMenuButton"
@@ -41,11 +49,7 @@ function Header() {
           </svg>
         </button>
 
-        <nav
-          className={`${
-            isExpanded ? `block` : `hidden`
-          } navMenu`}
-        >
+        <nav className={`${isExpanded ? `block` : `hidden`} navMenu`}>
           {[
             {
               route: `/`,
@@ -60,11 +64,7 @@ function Header() {
               title: `Code Of Conduct`,
             },
           ].map(link => (
-            <Link
-              className="navMenuItems"
-              key={link.title}
-              to={link.route}
-            >
+            <Link className="navMenuItems" key={link.title} to={link.route}>
               {link.title}
             </Link>
           ))}

@@ -6,8 +6,9 @@ module.exports = {
   siteMetadata: {
     title: `freeCodeCamp Nashville`,
     description: `A meetup for developers, designers, and students in Middle Tennessee involved in the freeCodeCamp.com learning community`,
+    baseUrl: 'https://fcc-nashville.netlify.app',
+    // TODO: Update baseUrl to new domain name once we migrate there
   },
-  pathPrefix: '/free-code-camp-nashville',
   plugins: [
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
@@ -51,9 +52,9 @@ module.exports = {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /assets/
-        }
-      }
+          include: /assets/,
+        },
+      },
     },
 
     // TODO: more plugins
