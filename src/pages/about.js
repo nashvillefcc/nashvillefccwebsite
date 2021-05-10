@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Img from 'gatsby-image';
+import LearnTeachCoding from '../assets/Learn-Teach-Coding.svg';
 
 function AboutPage(props) {
   // const { avatarSethAlexanderImage } = [
@@ -16,7 +17,7 @@ function AboutPage(props) {
       <SEO keywords={[`nashville`, `freecodecamp`]} title="About" />
       <section className="main-section md:bg-FCCblue-100">
         <div className="main-section-content main-section-index-1">
-          <div className="pt-8 px-2 md:px-0 md:mr-8 md:w-5/12">
+          <div className="pt-8 px-2 md:px-0 md:mr-8 md:w-8/12">
             <h2 className=" text-FCCblue-200">
               <span>ABOUT freeCodeCamp Nashville</span>
             </h2>
@@ -43,7 +44,12 @@ function AboutPage(props) {
             </p>
           </div>
 
-          <div className="flex-auto"></div>
+          <div className="flex-auto pt-20 hidden md:block">
+            <LearnTeachCoding
+              className="inline-block"
+              alt="An image of Five Key words (Learn, Create, Collaborate, Teach, And Grow) suround by curry brackets"
+            />
+          </div>
         </div>
       </section>
 
@@ -53,15 +59,15 @@ function AboutPage(props) {
         </h2>
       </section>
 
-      <section className="main-section">
-        <div className="main-section-content flex flex-col  justify-around">
-          <div className="flex flex-col  justify-around items-center">
+      <section className="main-section section-content-2">
+        <div className="main-section-content flex flex-col  md:justify-around ">
+          <div className="flex flex-col  justify-around items-center md:flex-row">
             <Img
-              className="rounded-full w-64 m-3"
+              className="rounded-full w-64 m-3 md:w-1/4"
               fluid={props.data.avatarSethAlexanderImage.childImageSharp.fluid}
               alt="Profile picture of Seth Alexander"
             />
-            <p className="text-xl">
+            <p className="text-xl md:w-3/4">
               <b>Seth Alexander</b>, freeCodeCamp Nashville Organizer, Software
               Engineer, Hard Problem Solver, TypeScript Lover, freeCodeCamp
               believer. I help facilitate learning and foster community in any
@@ -69,13 +75,13 @@ function AboutPage(props) {
               challenges, lectures, and panels.
             </p>
           </div>
-          <div className="p-4 flex flex-col  justify-around items-center">
+          <div className="p-4 flex flex-col  justify-around items-center md:flex-row">
             <Img
-              className="rounded-full w-64 m-3"
+              className="rounded-full w-64 m-3 md:w-1/4"
               fluid={props.data.avatarAlexThomasImage.childImageSharp.fluid}
               alt="Profile picture of Seth Alexander"
             />
-            <p className="text-xl">
+            <p className="text-xl md:w-3/4">
               <b>Alex Thomas</b>, freeCodeCamp Nashville Organizer, Full-Stack
               JavaScript developer with experience building and deploying web
               applications and APIs. I run the weekly Algorithms and Data
