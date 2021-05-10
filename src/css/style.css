@@ -29,10 +29,6 @@
   line-height: 1.75rem;
 }
 
-.section-content-2 {
-  @apply bg-white;
-}
-
 .FCC-divider {
   @apply w-full text-center text-white py-8 bg-FCCblue-200;
 }

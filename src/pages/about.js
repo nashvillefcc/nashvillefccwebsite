@@ -59,7 +59,7 @@ function AboutPage(props) {
         </h2>
       </section>
 
-      <section className="main-section section-content-2">
+      <section className="main-section bg-white">
         <div className="main-section-content flex flex-col  md:justify-around ">
           <div className="flex flex-col  justify-around items-center md:flex-row">
             <Img
