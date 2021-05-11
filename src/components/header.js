@@ -21,12 +21,15 @@ function Header() {
     if (path !== '/')
       return (
         <OrangeFCCLogo
-          className="logo"
-          alt={`${site.siteMetadata.title} Logo`}
+          className="logo logoOrange"
+          alt={`${site.siteMetadata.title} Orange Logo`}
         />
       );
     return (
-      <BlueFCCLogo className="logo" alt={`${site.siteMetadata.title} Logo`} />
+      <BlueFCCLogo
+        className="logo logoBlue"
+        alt={`${site.siteMetadata.title} Blue Logo`}
+      />
     );
   };
 
