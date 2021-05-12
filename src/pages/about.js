@@ -7,11 +7,6 @@ import Img from 'gatsby-image';
 import LearnTeachCoding from '../assets/Learn-Teach-Coding.svg';
 
 function AboutPage(props) {
-  // const { avatarSethAlexanderImage } = [
-  //   data.avatarSethAlexanderImage.childImageSharp.fluid,
-  // ];
-  console.log(props.data);
-
   return (
     <Layout>
       <SEO keywords={[`nashville`, `freecodecamp`]} title="About" />
@@ -19,7 +14,7 @@ function AboutPage(props) {
         <div className="main-section-content main-section-index-1">
           <div className="pt-8 px-2 md:px-0 md:mr-8 md:w-8/12">
             <h2 className=" text-FCCblue-200">
-              <span>ABOUT freeCodeCamp Nashville</span>
+              <span>About freeCodeCamp Nashville</span>
             </h2>
 
             <p className="mb-5">
@@ -47,7 +42,7 @@ function AboutPage(props) {
           <div className="flex-auto pt-20 hidden md:block">
             <LearnTeachCoding
               className="inline-block"
-              alt="An image of Five Key words (Learn, Create, Collaborate, Teach, And Grow) suround by curry brackets"
+              alt="An image of five key words (Learn, Create, Collaborate, Teach, and Grow) surrounded by curly brackets"
             />
           </div>
         </div>
@@ -59,15 +54,15 @@ function AboutPage(props) {
         </h2>
       </section>
 
-      <section className="main-section bg-white">
+      <section className="main-section">
         <div className="main-section-content flex flex-col  md:justify-around ">
           <div className="flex flex-col  justify-around items-center md:flex-row">
             <Img
-              className="rounded-full w-64 m-3 md:w-1/4"
+              className="rounded-full w-64 m-3 mb-8 md:mb-3 md:mr-12 md:w-1/4 border-2 border-FCCgray-100"
               fluid={props.data.avatarSethAlexanderImage.childImageSharp.fluid}
               alt="Profile picture of Seth Alexander"
             />
-            <p className="text-xl md:w-3/4">
+            <p className="text-xl mb-12 md:w-3/4">
               <b>Seth Alexander</b>, freeCodeCamp Nashville Organizer, Software
               Engineer, Hard Problem Solver, TypeScript Lover, freeCodeCamp
               believer. I help facilitate learning and foster community in any
@@ -77,11 +72,11 @@ function AboutPage(props) {
           </div>
           <div className="p-4 flex flex-col  justify-around items-center md:flex-row">
             <Img
-              className="rounded-full w-64 m-3 md:w-1/4"
+              className="rounded-full w-64 m-3 mb-8 md:mb-3 md:mr-12 md:w-1/4 border-2 border-FCCgray-100"
               fluid={props.data.avatarAlexThomasImage.childImageSharp.fluid}
               alt="Profile picture of Seth Alexander"
             />
-            <p className="text-xl md:w-3/4">
+            <p className="text-xl mb-12 md:w-3/4">
               <b>Alex Thomas</b>, freeCodeCamp Nashville Organizer, Full-Stack
               JavaScript developer with experience building and deploying web
               applications and APIs. I run the weekly Algorithms and Data
