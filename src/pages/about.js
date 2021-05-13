@@ -74,7 +74,7 @@ function AboutPage(props) {
             <Img
               className="rounded-full w-64 m-3 mb-8 md:mb-3 md:mr-12 md:w-1/4 border-2 border-FCCgray-100"
               fluid={props.data.avatarAlexThomasImage.childImageSharp.fluid}
-              alt="Profile picture of Seth Alexander"
+              alt="Profile picture of Alex Thomas"
             />
             <p className="text-xl mb-12 md:w-3/4">
               <b>Alex Thomas</b>, freeCodeCamp Nashville Organizer, Full-Stack
