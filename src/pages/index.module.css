@@ -1,9 +1,25 @@
-/*!
-Technical debt: importing tailwind into a module creates
-another huge CSS file, we'll need to clean that up.
-*/
-/*
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-*/
+.mainSectionOne {
+  @apply flex flex-col-reverse font-Roboto text-FCCgray-200;
+}
+
+.mainSectionOne h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  @apply mb-5 font-bold;
+}
+
+.mainSectionOne p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@screen md {
+  .mainSectionOne {
+    @apply flex-row;
+  }
+
+  .mainSectionOne h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}

@@ -2,6 +2,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import React, { useState } from 'react';
 import BlueFCCLogo from '../assets/FCC-Nashville-blue-logo.svg';
 import OrangeFCCLogo from '../assets/FCC-Nashville-orange-logo.svg';
+import componentStyles from './header.module.css';
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -21,13 +22,13 @@ function Header() {
     if (path !== '/')
       return (
         <OrangeFCCLogo
-          className="logo logoOrange"
+          className={`${componentStyles.logo} ${componentStyles.logoOrange}`}
           alt={`${site.siteMetadata.title} Orange Logo`}
         />
       );
     return (
       <BlueFCCLogo
-        className="logo logoBlue"
+        className={`${componentStyles.logo} ${componentStyles.logoBlue}`}
         alt={`${site.siteMetadata.title} Blue Logo`}
       />
     );
@@ -35,15 +36,15 @@ function Header() {
 
   return (
     <header className="bg-white">
-      <div className="navBar">
+      <div className={componentStyles.navBar}>
         <Link to="/">{logo(currentPathname)}</Link>
 
         <button
-          className="navMenuButton"
+          className={componentStyles.navMenuButton}
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg
-            className="burgerIcon"
+            className={componentStyles.burgerIcon}
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -52,7 +53,11 @@ function Header() {
           </svg>
         </button>
 
-        <nav className={`${isExpanded ? `block` : `hidden`} navMenu`}>
+        <nav
+          className={
+            `${isExpanded ? `block` : `hidden`} ` + componentStyles.navMenu
+          }
+        >
           {[
             {
               route: `/`,
@@ -67,7 +72,11 @@ function Header() {
               title: `Code Of Conduct`,
             },
           ].map(link => (
-            <Link className="navMenuItems" key={link.title} to={link.route}>
+            <Link
+              className={componentStyles.navMenuItems}
+              key={link.title}
+              to={link.route}
+            >
               {link.title}
             </Link>
           ))}

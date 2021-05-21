@@ -6,212 +6,27 @@
 /*! purgecss end ignore */
 @tailwind utilities;
 
-.main-section {
-  @apply w-full py-20;
-}
-
-.main-section-content {
-  @apply w-full max-w-6xl px-4 mx-auto;
-}
-
-.main-section-index-1 {
-  @apply flex flex-col-reverse font-Roboto text-FCCgray-200;
-}
-
-.main-section-index-1 h2 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  @apply mb-5 font-bold;
-}
-
-.main-section-index-1 p {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.FCC-divider {
+.fccDivider {
   @apply w-full text-center text-white py-8 bg-FCCblue-200;
 }
 
-.FCC-divider h2 {
+.fccDivider h2 {
   font-size: 2.75rem;
   line-height: 2.75rem;
   @apply inline-block font-bold font-Roboto;
 }
 
 @screen md {
-  .main-section-index-1 {
-    @apply flex-row;
-  }
-  .main-section-index-1 h2 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-  }
-  .FCC-divider h2 {
+  .fccDivider h2 {
     font-size: 3rem;
     line-height: 1;
   }
 }
 
-.logo {
-  @apply absolute w-32 h-20 ml-16 mt-8 left-0 top-0;
+.mainSection {
+  @apply w-full py-20;
 }
 
-.logoOrange .cls-1 {
-  @apply fill-current text-FCCorange;
+.mainSectionContent {
+  @apply w-full max-w-6xl px-4 mx-auto;
 }
-
-.logoBlue .cls-1 {
-  @apply fill-current text-FCCblue-200;
-}
-
-.logo .cls-2 {
-  @apply font-normal fill-current text-white font-Pacifico;
-  transform: translate(65px, 180px);
-  font-size: 60px;
-}
-
-.logo .cls-3 {
-  @apply stroke-current text-black  bg-opacity-0;
-}
-
-.connectLogo .cls-1,
-.connectLogo .cls-2,
-.connectLogo .cls-3,
-.connectLogo .cls-4 {
-  stroke-opacity: 1;
-  fill-opacity: 1;
-  stroke: none;
-  font-family: inherit;
-}
-
-.burgerIcon {
-  @apply w-10 h-6 mr-16 mt-16 fill-current;
-}
-
-.navBar {
-  @apply flex flex-wrap items-center justify-between max-w-5xl mx-auto;
-}
-
-.navMenu {
-  @apply w-full;
-}
-
-.navMenuItems {
-  @apply block mt-4 font-medium text-FCCgray-200 no-underline font-Roboto text-xl uppercase;
-}
-
-.navMenuItems:hover {
-  @apply text-FCCblue-200;
-}
-
-.navMenuItems ul {
-  @apply list-inside;
-}
-
-.menuButton {
-  @apply px-4 py-2 text-FCCgray-100 border border-white rounded;
-}
-
-footer {
-  height: 25em;
-}
-
-.footerNav {
-  @apply flex flex-col h-full justify-between p-0 mx-auto text-sm;
-}
-
-.socials {
-  height: 40%;
-  @apply flex flex-row justify-center items-center  w-full bg-FCCblue-100 border-t border-FCCblue-200 text-4xl;
-}
-
-.socials a {
-  @apply mx-2;
-}
-
-.emailAndCopyright {
-  height: 60%;
-  @apply flex flex-col justify-center items-center top-0 bg-FCCblue-200 text-white font-medium font-sans;
-}
-
-.emailAndCopyright a {
-  @apply my-8;
-}
-
-.emailLink {
-  @apply flex flex-row items-center justify-evenly;
-}
-
-.emailName {
-  @apply text-lg;
-}
-
-.connectLogo {
-  position: absolute;
-  transform: translateY(-4em);
-  margin-left: 1em;
-  width: 17em;
-  justify-self: normal;
-  font-size: 0.925rem;
-  font-weight: 300;
-}
-
-@screen md {
-  .logo {
-    @apply h-32 w-48 ml-16 mt-8;
-  }
-  .navBar {
-    @apply px-8;
-  }
-  .navMenu {
-    @apply flex items-center w-auto py-10;
-  }
-  .navMenuItems {
-    @apply inline-block mt-0 ml-6;
-  }
-  .navMenuButton {
-    @apply hidden;
-  }
-
-  footer {
-    height: 32em;
-  }
-
-  .socials {
-    font-size: 80px;
-  }
-
-  .socials a {
-    @apply mx-6;
-  }
-
-  .socials,
-  .emailAndCopyright {
-    height: 50%;
-  }
-
-  .emailAndCopyright {
-    @apply flex flex-row justify-around items-center;
-  }
-
-  .emailLink {
-    @apply justify-start;
-  }
-
-  .emailName {
-    @apply pl-4;
-  }
-
-  .connectLogo {
-    transform: translateY(-6.35em);
-    margin-left: 4em;
-    width: 27em;
-  }
-}
-
-/* @screen xl {
-  .socials a {
-    @apply mx-16;
-  }
-} */
