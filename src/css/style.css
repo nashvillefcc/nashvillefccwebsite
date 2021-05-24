@@ -195,10 +195,6 @@ footer {
     margin-left: 4em;
     width: 27em;
   }
-
-  body {
-    @apply bg-FCCblue-100;
-  }
 }
 
 /* @screen xl {
