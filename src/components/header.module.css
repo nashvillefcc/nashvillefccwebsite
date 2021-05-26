@@ -2,21 +2,21 @@
   @apply absolute w-32 h-20 ml-16 mt-8 left-0 top-0;
 }
 
-.logo .cls-2 {
+.logo :global .cls-2 {
   @apply font-normal fill-current text-white font-Pacifico;
   transform: translate(65px, 180px);
   font-size: 60px;
 }
 
-.logo .cls-3 {
+.logo :global .cls-3 {
   @apply stroke-current text-black  bg-opacity-0;
 }
 
-.logoOrange .cls-1 {
+.logoOrange :global .cls-1 {
   @apply fill-current text-FCCorange;
 }
 
-.logoBlue .cls-1 {
+.logoBlue :global .cls-1 {
   @apply fill-current text-FCCblue-200;
 }
 
@@ -38,10 +38,6 @@
 
 .navMenuItems:hover {
   @apply text-FCCblue-200;
-}
-
-.navMenuItems ul {
-  @apply list-inside;
 }
 
 @screen md {

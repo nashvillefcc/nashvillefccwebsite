@@ -4,7 +4,6 @@ import EventCard from '../components/event-card';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import mockEvents from '../mock-data/mockEvents';
-import pageStyles from './index.module.css';
 
 function IndexPage() {
   const [upcomingEvents, setUpcomingEvents] = useState([]);
@@ -21,7 +20,7 @@ function IndexPage() {
       <SEO keywords={[`nashville`, `freecodecamp`]} title="Home" />
 
       <section className="mainSection md:bg-FCCblue-100">
-        <div className={pageStyles.mainSectionOne + ` mainSectionContent`}>
+        <div className="mainSectionOne mainSectionContent">
           <div className="pt-8 px-2 md:px-0 md:mr-8 md:w-5/12">
             <h2>
               <span>freeCodeCamp Nashville</span>

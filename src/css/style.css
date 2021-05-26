@@ -6,6 +6,40 @@
 /*! purgecss end ignore */
 @tailwind utilities;
 
+.mainSection {
+  @apply w-full py-20;
+}
+
+.mainSectionContent {
+  @apply w-full max-w-6xl px-4 mx-auto;
+}
+
+.mainSectionOne {
+  @apply flex flex-col-reverse font-Roboto text-FCCgray-200;
+}
+
+.mainSectionOne h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  @apply mb-5 font-bold;
+}
+
+.mainSectionOne p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@screen md {
+  .mainSectionOne {
+    @apply flex-row;
+  }
+
+  .mainSectionOne h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
 .fccDivider {
   @apply w-full text-center text-white py-8 bg-FCCblue-200;
 }
@@ -21,12 +55,4 @@
     font-size: 3rem;
     line-height: 1;
   }
-}
-
-.mainSection {
-  @apply w-full py-20;
-}
-
-.mainSectionContent {
-  @apply w-full max-w-6xl px-4 mx-auto;
 }
