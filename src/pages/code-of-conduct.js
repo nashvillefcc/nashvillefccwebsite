@@ -135,11 +135,12 @@ function CodeOfConductPage(props) {
                 Contacting in organizer directly, or corporately, via email:
                 <ol className="list-disc pl-6 mb-4 mt-2">
                   <li>
-                    Seth Alexander: <a href="setha@hey.com">setha@hey.com</a>
+                    Seth Alexander:{' '}
+                    <a href="mailto:setha@hey.com">setha@hey.com</a>
                   </li>
                   <li>
                     Laura Pinell:{' '}
-                    <a href="laura@uxbridge.io">laura@uxbridge.io</a>
+                    <a href="mailto:laura@uxbridge.io">laura@uxbridge.io</a>
                   </li>
                 </ol>
               </li>
