@@ -109,7 +109,7 @@ function CodeOfConductPage(props) {
             <p className="mb-5">
               Where freeCodeCamp Nashville platforms or events are subject to
               their own Code of Conduct (e.g. the{' '}
-              <a herf="https://support.discordapp.com/hc/en-us/articles/360024871991-Discord-Partnership-Code-of-Conduct">
+              <a href="https://support.discordapp.com/hc/en-us/articles/360024871991-Discord-Partnership-Code-of-Conduct">
                 Discord Parnership Code of Conduct
               </a>
               ) both Code of Conducts will be enforced. If there are any
@@ -135,11 +135,11 @@ function CodeOfConductPage(props) {
                 Contacting in organizer directly, or corporately, via email:
                 <ol className="list-disc pl-6 mb-4 mt-2">
                   <li>
-                    Seth Alexander: <a herf="setha@hey.com">setha@hey.com</a>
+                    Seth Alexander: <a href="setha@hey.com">setha@hey.com</a>
                   </li>
                   <li>
                     Laura Pinell:{' '}
-                    <a herf="laura@uxbridge.io">laura@uxbridge.io</a>
+                    <a href="laura@uxbridge.io">laura@uxbridge.io</a>
                   </li>
                 </ol>
               </li>
@@ -196,7 +196,7 @@ function CodeOfConductPage(props) {
 
             <p className="mb-5">
               This code of conduct was originally derived from the{' '}
-              <a herf="https://pynash.org/code-of-conduct">
+              <a href="https://pynash.org/code-of-conduct">
                 PyNash Code of Conduct.
               </a>
             </p>
@@ -204,7 +204,7 @@ function CodeOfConductPage(props) {
             <p className="mb-5">
               The freeCodeCamp Nashville Code of Conduct is similarly licensed
               under a{' '}
-              <a herf="https://creativecommons.org/licenses/by/3.0/">
+              <a href="https://creativecommons.org/licenses/by/3.0/">
                 Creative Commons Attribution 3.0 Unported License.
               </a>
             </p>
