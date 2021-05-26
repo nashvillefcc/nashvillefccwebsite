@@ -29,10 +29,6 @@
   line-height: 1.75rem;
 }
 
-.section-content-2 {
-  @apply bg-white;
-}
-
 .FCC-divider {
   @apply w-full text-center text-white py-8 bg-FCCblue-200;
 }
@@ -61,9 +57,22 @@
   @apply absolute w-32 h-20 ml-16 mt-8 left-0 top-0;
 }
 
+.logoOrange .cls-1 {
+  @apply fill-current text-FCCorange;
+}
+
+.logoBlue .cls-1 {
+  @apply fill-current text-FCCblue-200;
+}
+
 .logo .cls-2 {
-  font-weight: 400 !important;
+  @apply font-normal fill-current text-white font-Pacifico;
   transform: translate(65px, 180px);
+  font-size: 60px;
+}
+
+.logo .cls-3 {
+  @apply stroke-current text-black  bg-opacity-0;
 }
 
 .connectLogo .cls-1,
@@ -198,10 +207,6 @@ footer {
     transform: translateY(-6.35em);
     margin-left: 4em;
     width: 27em;
-  }
-
-  body {
-    @apply bg-FCCblue-100;
   }
 }
 

@@ -1,4 +1,5 @@
-# Free Code Camp Nashville Site
+# freeCodeCamp Nashville Site
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f312a2b3-bebf-40dd-9c3e-7c1b303005cc/deploy-status)](https://app.netlify.com/sites/fcc-nashville/deploys)
 
 This is the source code for our group's upcoming public Web site. Development mostly happens in the `/src` folder, while the build files are in the `/docs` folder.
 

@@ -19,7 +19,7 @@ function IndexPage() {
     <Layout>
       <SEO keywords={[`nashville`, `freecodecamp`]} title="Home" />
 
-      <section className="main-section md:bg-FCCblue-100">
+      <section className="main-section md:bg-FCCblue-100 ">
         <div className="main-section-content main-section-index-1">
           <div className="pt-8 px-2 md:px-0 md:mr-8 md:w-5/12">
             <h2>
@@ -54,7 +54,7 @@ function IndexPage() {
         </h2>
       </section>
 
-      <section className="main-section section-content-2">
+      <section className="main-section">
         <div className="main-section-content md:max-w-full md:px-12">
           <div className="px-8 grid gap-12 md:grid-cols-3 md:p-0">
             {upcomingEvents.map(e => {
