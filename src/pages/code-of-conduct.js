@@ -4,12 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-function CodeOfConductPage(props) {
-  // const { avatarSethAlexanderImage } = [
-  //   data.avatarSethAlexanderImage.childImageSharp.fluid,
-  // ];
-  console.log(props.data);
-
+function CodeOfConductPage() {
   return (
     <Layout>
       <SEO keywords={[`nashville`, `freecodecamp`]} title="Code Of Conduct" />
