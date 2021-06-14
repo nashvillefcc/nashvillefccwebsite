@@ -10,10 +10,10 @@ function AboutPage(props) {
   return (
     <Layout>
       <SEO keywords={[`nashville`, `freecodecamp`]} title="About" />
-      <section className="main-section md:bg-FCCblue-100">
-        <div className="main-section-content main-section-index-1">
+      <section className="mainSection md:bg-FCCblue-100">
+        <div className="mainSectionContent mainSectionOne">
           <div className="pt-8 px-2 md:px-0 md:mr-8 md:w-8/12">
-            <h2 className=" text-FCCblue-200">
+            <h2 className="text-FCCblue-200">
               <span>About freeCodeCamp Nashville</span>
             </h2>
 
@@ -48,15 +48,15 @@ function AboutPage(props) {
         </div>
       </section>
 
-      <section className="FCC-divider">
+      <section className="fccDivider">
         <h2>
           <span>LEADERSHIP</span>
         </h2>
       </section>
 
-      <section className="main-section">
-        <div className="main-section-content flex flex-col  md:justify-around ">
-          <div className="flex flex-col  justify-around items-center md:flex-row">
+      <section className="mainSection">
+        <div className="mainSectionContent flex flex-col  md:justify-around ">
+          <div className="flex flex-col justify-around items-center md:flex-row">
             <Img
               className="rounded-full w-64 m-3 mb-8 md:mb-3 md:mr-12 md:w-1/4 border-2 border-FCCgray-100"
               fluid={props.data.avatarSethAlexanderImage.childImageSharp.fluid}

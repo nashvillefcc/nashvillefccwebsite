@@ -6,25 +6,25 @@
 /*! purgecss end ignore */
 @tailwind utilities;
 
-.main-section {
+.mainSection {
   @apply w-full py-20;
 }
 
-.main-section-content {
+.mainSectionContent {
   @apply w-full max-w-6xl px-4 mx-auto;
 }
 
-.main-section-index-1 {
+.mainSectionOne {
   @apply flex flex-col-reverse font-Roboto text-FCCgray-200;
 }
 
-.main-section-index-1 h2 {
+.mainSectionOne h2 {
   font-size: 1.25rem;
   line-height: 1.75rem;
   @apply mb-5 font-bold;
 }
 
-.main-section-index-1 p {
+.mainSectionOne p {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
@@ -52,10 +52,11 @@ a {
 }
 
 @screen md {
-  .main-section-index-1 {
+  .mainSectionOne {
     @apply flex-row;
   }
-  .main-section-index-1 h2 {
+
+  .mainSectionOne h2 {
     font-size: 2.5rem;
     line-height: 2.5rem;
   }
@@ -135,101 +136,19 @@ footer {
   height: 25em;
 }
 
-.footerNav {
-  @apply flex flex-col h-full justify-between p-0 mx-auto text-sm;
+.fccDivider {
+  @apply w-full text-center text-white py-8 bg-FCCblue-200;
 }
 
-.socials {
-  height: 40%;
-  @apply flex flex-row justify-center items-center  w-full bg-FCCblue-100 border-t border-FCCblue-200 text-4xl;
-}
-
-.socials a {
-  @apply mx-2;
-}
-
-.emailAndCopyright {
-  height: 60%;
-  @apply flex flex-col justify-center items-center top-0 bg-FCCblue-200 text-white font-medium font-sans;
-}
-
-.emailAndCopyright a {
-  @apply my-8;
-}
-
-.emailLink {
-  @apply flex flex-row items-center justify-evenly;
-}
-
-.emailName {
-  @apply text-lg;
-}
-
-.connectLogo {
-  position: absolute;
-  transform: translateY(-4em);
-  margin-left: 1em;
-  width: 17em;
-  justify-self: normal;
-  font-size: 0.925rem;
-  font-weight: 300;
+.fccDivider h2 {
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+  @apply inline-block font-bold font-Roboto;
 }
 
 @screen md {
-  .logo {
-    @apply h-32 w-48 ml-16 mt-8;
-  }
-  .navBar {
-    @apply px-8;
-  }
-  .navMenu {
-    @apply flex items-center w-auto py-10;
-  }
-  .navMenuItems {
-    @apply inline-block mt-0 ml-6;
-  }
-  .navMenuButton {
-    @apply hidden;
-  }
-
-  footer {
-    height: 32em;
-  }
-
-  .socials {
-    font-size: 80px;
-  }
-
-  .socials a {
-    @apply mx-6;
-  }
-
-  .socials,
-  .emailAndCopyright {
-    height: 50%;
-  }
-
-  .emailAndCopyright {
-    @apply flex flex-row justify-around items-center;
-  }
-
-  .emailLink {
-    @apply justify-start;
-  }
-
-  .emailName {
-    @apply pl-4;
-  }
-
-  .connectLogo {
-    transform: translateY(-6.35em);
-    margin-left: 4em;
-    width: 27em;
+  .fccDivider h2 {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
-
-/* @screen xl {
-  .socials a {
-    @apply mx-16;
-  }
-} */

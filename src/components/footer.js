@@ -10,14 +10,15 @@ import {
   faTwitter,
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
+import componentStyles from './footer.module.css';
 
 import Connect from '../assets/Connect.svg';
 function footer() {
   return (
     <footer>
-      <nav className="footerNav">
-        <Connect className="connectLogo" alt={`Connect Logo`} />
-        <div className="socials">
+      <nav className={componentStyles.footerNav}>
+        <Connect className={componentStyles.connectLogo} alt={`Connect Logo`} />
+        <div className={componentStyles.socials}>
           <a
             href="https://www.meetup.com/freeCodeCamp-Nashville/"
             aria-label="Meetup"
@@ -67,11 +68,14 @@ function footer() {
             <FontAwesomeIcon icon={faFacebook} size="1x" color="#444444" />
           </a>
         </div>
-        <div className="emailAndCopyright">
+        <div className={componentStyles.emailAndCopyright}>
           <div>
-            <a href="mailto:setha@hey.com" className="emailLink">
+            <a
+              href="mailto:setha@hey.com"
+              className={componentStyles.emailLink}
+            >
               <FontAwesomeIcon icon={faEnvelope} size="2x" color="white" />
-              <p className="emailName">setha@hey.com</p>{' '}
+              <p className={componentStyles.emailName}>setha@hey.com</p>{' '}
               {/* This will change to something else once we setup a domain */}
             </a>
             <p>© 2021 FreeCodeCamp Nashville</p>

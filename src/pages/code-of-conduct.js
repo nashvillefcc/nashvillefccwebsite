@@ -7,8 +7,8 @@ function CodeOfConductPage() {
   return (
     <Layout>
       <SEO keywords={[`nashville`, `freecodecamp`]} title="Code Of Conduct" />
-      <section className="main-section ">
-        <div className="main-section-content main-section-index-1">
+      <section className="mainSection">
+        <div className="mainSectionContent mainSectionOne">
           <div className="pt-8 px-2">
             <h2 className=" text-FCCblue-200">
               <span>freeCodeCamp Nashville Code of Conduct</span>
