@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
@@ -8,7 +7,7 @@ function CodeOfConductPage() {
   return (
     <Layout>
       <SEO keywords={[`nashville`, `freecodecamp`]} title="Code Of Conduct" />
-      <section className="main-section bg-white">
+      <section className="main-section ">
         <div className="main-section-content main-section-index-1">
           <div className="pt-8 px-2">
             <h2 className=" text-FCCblue-200">
@@ -210,24 +209,5 @@ function CodeOfConductPage() {
     </Layout>
   );
 }
-
-export const query = graphql`
-  query {
-    avatarSethAlexanderImage: file(relativePath: { eq: "Seth-Alexander.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 260, quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    avatarAlexThomasImage: file(relativePath: { eq: "Alex-Thomas.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 260, quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
 
 export default CodeOfConductPage;
