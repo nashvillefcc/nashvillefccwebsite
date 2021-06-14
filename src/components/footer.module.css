@@ -1,0 +1,90 @@
+footer {
+  height: 25em;
+}
+
+.footerNav {
+  @apply flex flex-col h-full justify-between p-0 mx-auto text-sm;
+}
+
+.connectLogo {
+  position: absolute;
+  transform: translateY(-4em);
+  margin-left: 1em;
+  width: 17em;
+  justify-self: normal;
+  font-size: 0.925rem;
+  font-weight: 300;
+}
+
+.connectLogo :global .cls-1,
+.connectLogo :global .cls-2,
+.connectLogo :global .cls-3,
+.connectLogo :global .cls-4 {
+  stroke-opacity: 1;
+  fill-opacity: 1;
+  stroke: none;
+  font-family: inherit;
+}
+
+.socials {
+  height: 40%;
+  @apply flex flex-row justify-center items-center  w-full bg-FCCblue-100 border-t border-FCCblue-200 text-4xl;
+}
+
+.socials a {
+  @apply mx-2;
+}
+
+.emailAndCopyright {
+  height: 60%;
+  @apply flex flex-col justify-center items-center top-0 bg-FCCblue-200 text-white font-medium font-sans;
+}
+
+.emailAndCopyright a {
+  @apply my-8;
+}
+
+.emailLink {
+  @apply flex flex-row items-center justify-evenly;
+}
+
+.emailName {
+  @apply text-lg;
+}
+
+@screen md {
+  footer {
+    height: 32em;
+  }
+
+  .connectLogo {
+    transform: translateY(-6.35em);
+    margin-left: 4em;
+    width: 27em;
+  }
+
+  .socials {
+    font-size: 80px;
+  }
+
+  .socials a {
+    @apply mx-6;
+  }
+
+  .socials,
+  .emailAndCopyright {
+    height: 50%;
+  }
+
+  .emailAndCopyright {
+    @apply flex flex-row justify-around items-center;
+  }
+
+  .emailLink {
+    @apply justify-start;
+  }
+
+  .emailName {
+    @apply pl-4;
+  }
+}
