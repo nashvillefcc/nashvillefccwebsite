@@ -186,7 +186,7 @@ function CodeOfConductPage() {
             <p className="mb-5">
               Only permanent actions (such as bans) may be appealed. To appeal a
               decision, please contact an organizer listed above with your
-              appeal and freeCodeCamp Nashville will review the case. License
+              appeal and freeCodeCamp Nashville will review the case.
             </p>
 
             <p className="mb-5">
