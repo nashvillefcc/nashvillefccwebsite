@@ -37,4 +37,4 @@ See the [CONTRIBUTING](https://github.com/nashvillefcc/nashvillefcc2020website/b
 
 ## Contact
 
-Please refer to the author details in /package.json.
+Please refer to the author details in [/package.json](https://github.com/nashvillefcc/nashvillefcc2020website/blob/master/package.json).
