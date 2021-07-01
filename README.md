@@ -33,7 +33,7 @@ If you are using VS Code, we have recommended extensions listed in the `free-cod
 ## Contributing
 
 [![Open Issues](https://img.shields.io/github/issues-raw/nashvillefcc/nashvillefcc2020website)](https://github.com/nashvillefcc/nashvillefcc2020website/issues)
-[![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/nashvillefcc/nashvillefcc2020website)](https://github.com/nashvillefcc/nashvillefcc2020website/issues)
+[![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/nashvillefcc/nashvillefcc2020website)](https://github.com/nashvillefcc/nashvillefcc2020website/pulls)
 
 When contributing to this repository, please notify us first before assigning yourself to the ticket. We can be contacted via Discord or GitHub. See the [task board](https://github.com/nashvillefcc/nashvillefcc2020website/projects/4) for a list of features and bugs we're working on.
 
