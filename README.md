@@ -37,7 +37,7 @@ If you are using VS Code, we have recommended extensions listed in the `free-cod
 
 When contributing to this repository, please notify us first before assigning yourself to the ticket. We can be contacted via Discord or GitHub. See the [task board](https://github.com/nashvillefcc/nashvillefcc2020website/projects/4) for a list of features and bugs we're working on.
 
-See the [CONTRIBUTING](https://github.com/nashvillefcc/nashvillefcc2020website/blob/master/CONTRIBUTING.md) page for more details.
+See the [CONTRIBUTING.md](https://github.com/nashvillefcc/nashvillefcc2020website/blob/master/CONTRIBUTING.md) page for more details.
 
 ## Contact
 
