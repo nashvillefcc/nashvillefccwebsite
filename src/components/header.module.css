@@ -24,12 +24,17 @@
   @apply flex flex-wrap items-center justify-between max-w-5xl mx-auto;
 }
 
-.burgerIcon {
-  @apply w-10 h-6 mr-16 mt-16 fill-current;
+.navMenu {
+  @apply hidden;
 }
 
-.navMenu {
-  @apply w-full;
+.navMenuButton {
+  z-index: 1000;
+  @apply mr-12 mt-12;
+}
+
+.burgerIcon {
+  @apply w-10 h-6 m-2 fill-current;
 }
 
 .navMenuItems {

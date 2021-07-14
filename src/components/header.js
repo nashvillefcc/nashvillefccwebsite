@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import BlueFCCLogo from '../assets/FCC-Nashville-blue-logo.svg';
 import OrangeFCCLogo from '../assets/FCC-Nashville-orange-logo.svg';
 import componentStyles from './header.module.css';
+import MobileNavbar from './mobile-navbar';
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -16,6 +17,20 @@ function Header() {
     }
   `);
 
+  const navbarLinks = [
+    {
+      route: `/`,
+      title: `Home`,
+    },
+    {
+      route: `/about`,
+      title: `About`,
+    },
+    {
+      route: `/code-of-conduct`,
+      title: `Code Of Conduct`,
+    },
+  ];
   const currentPathname =
     typeof window !== `undefined` ? window.location.pathname : '/';
   const logo = path => {
@@ -53,25 +68,10 @@ function Header() {
           </svg>
         </button>
 
-        <nav
-          className={
-            `${isExpanded ? `block` : `hidden`} ` + componentStyles.navMenu
-          }
-        >
-          {[
-            {
-              route: `/`,
-              title: `Home`,
-            },
-            {
-              route: `/about`,
-              title: `About`,
-            },
-            {
-              route: `/code-of-conduct`,
-              title: `Code Of Conduct`,
-            },
-          ].map(link => (
+        <MobileNavbar navbarLinks={navbarLinks} isExpanded={isExpanded} />
+
+        <nav className={componentStyles.navMenu}>
+          {navbarLinks.map(link => (
             <Link
               className={componentStyles.navMenuItems}
               key={link.title}
