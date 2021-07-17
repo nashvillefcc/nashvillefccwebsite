@@ -7,8 +7,8 @@ function MobileNavbar({ navbarLinks, isExpanded }) {
   return (
     <div
       className={`${componentStyles.navbarMenu} ${
-        isExpanded ? `block` : `hidden`
-      } bg-FCCblue-200 w-3/4 h-full absolute top-0 right-0 pt-24`}
+        isExpanded ? `${componentStyles.isExpanded}` : ``
+      } bg-FCCblue-200 w-3/4 h-full pt-24`}
     >
       {navbarLinks.map(link => (
         <Link

@@ -33,10 +33,6 @@
   @apply mr-12 mt-12;
 }
 
-.burgerIcon {
-  @apply w-10 h-6 m-2 fill-current;
-}
-
 .navMenuItems {
   @apply block mt-4 font-medium text-FCCgray-200 no-underline font-Roboto text-xl uppercase;
 }

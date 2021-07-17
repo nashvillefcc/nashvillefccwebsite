@@ -1,5 +1,7 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import BlueFCCLogo from '../assets/FCC-Nashville-blue-logo.svg';
 import OrangeFCCLogo from '../assets/FCC-Nashville-orange-logo.svg';
 import componentStyles from './header.module.css';
@@ -58,14 +60,11 @@ function Header() {
           className={componentStyles.navMenuButton}
           onClick={() => toggleExpansion(!isExpanded)}
         >
-          <svg
-            className={componentStyles.burgerIcon}
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
+          <FontAwesomeIcon
+            icon={faBars}
+            size="2x"
+            color={isExpanded ? `white` : `black`}
+          />
         </button>
 
         <MobileNavbar navbarLinks={navbarLinks} isExpanded={isExpanded} />
