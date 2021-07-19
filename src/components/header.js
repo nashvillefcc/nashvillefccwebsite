@@ -1,7 +1,7 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import BlueFCCLogo from '../assets/FCC-Nashville-blue-logo.svg';
 import OrangeFCCLogo from '../assets/FCC-Nashville-orange-logo.svg';
 import componentStyles from './header.module.css';
@@ -57,13 +57,22 @@ function Header() {
         <Link to="/">{logo(currentPathname)}</Link>
 
         <button
-          className={componentStyles.navMenuButton}
+          className={`${componentStyles.navMenuButton} relative`}
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <FontAwesomeIcon
+            icon={faTimes}
+            size="2x"
+            className={`${componentStyles.timesIcon} ${
+              isExpanded ? `${componentStyles.isExpanded}` : ``
+            } fill-current text-white`}
+          />
+          <FontAwesomeIcon
             icon={faBars}
             size="2x"
-            color={isExpanded ? `white` : `black`}
+            className={`${componentStyles.barsIcon} ${
+              isExpanded ? `${componentStyles.isExpanded}` : ``
+            } fill-current text-gray-700`}
           />
         </button>
 
