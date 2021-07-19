@@ -6,7 +6,7 @@ const EventCard = ({ event }) => {
   // utc_offset,
   // venue: { name: venueName },
   const { id, is_online_event, name, time, thumbnail } = event;
-  console.log(thumbnail);
+
   return (
     <div className="p-4 border border-solid border-gray-400 mx-auto">
       <a

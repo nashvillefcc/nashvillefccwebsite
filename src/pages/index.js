@@ -8,10 +8,8 @@ function IndexPage() {
   const [upcomingEvents, setUpcomingEvents] = useState([]);
 
   useEffect(() => {
-    fetch();
-    'https://fcc-nashville.netlify.app/.netlify/functions/pingEvents' // For live site
-      // 'https://admiring-borg-a3bba1.netlify.app/.netlify/functions/pingEvents' // For live branch testing site
-      // 'http://localhost:8888/.netlify/functions/pingEvents' // for testing in local environment
+    console.log(window.location.href);
+    fetch(`${window.location.href}.netlify/functions/pingEvents`)
       .then(res => res.json())
       .then(data => {
         let date_regex = /\w+(day), \w+ \d{1,2} (at) \d{1,2}:\d{1,2} \w+/g; // assumes this is the standard date format and will not change
@@ -23,7 +21,6 @@ function IndexPage() {
           let date_matches = items[i].content.match(date_regex);
           let id_matches = items[i].guid.match(id_regex);
 
-          console.log(data.items);
           let event = {
             id: id_matches ? id_matches[0] : 'no id found...',
             time: date_matches ? date_matches[0] : 'no date found...',
