@@ -77,9 +77,17 @@ function IndexPage() {
       <section className="mainSection">
         <div className="mainSectionContent md:max-w-full md:px-12">
           <div className="px-8 grid gap-12 md:grid-cols-3 md:p-0">
-            {upcomingEvents.map(e => {
-              return <EventCard key={e.id} event={e} />;
-            })}
+            {upcomingEvents.length > 0 ? (
+              upcomingEvents.map(e => {
+                return <EventCard key={e.id} event={e} />;
+              })
+            ) : (
+              <div className="w-screen h-48 flex items-center justify-center">
+                <h1 className="text-center text-3xl">
+                  Error loading events...
+                </h1>
+              </div>
+            )}
           </div>
         </div>
       </section>

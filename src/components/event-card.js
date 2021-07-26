@@ -8,14 +8,14 @@ const EventCard = ({ event }) => {
   const { id, is_online_event, name, time, thumbnail } = event;
 
   return (
-    <div className="p-4 border border-solid border-gray-400 mx-auto">
+    <div className="event-card p-4 border border-solid border-gray-400 mx-auto w-full">
       <a
         href={`https://www.meetup.com/freeCodeCamp-Nashville/events/${id}/`}
         target="blank"
         rel="noopener noreferrer"
       >
         <img className="object-cover w-full" src={thumbnail} />
-        <div className="mt-4">
+        <div className="mt-4 h-1/2">
           <p className="text-blue-400 font-Roboto font-bold md:text-xl md:text-FCCgray-200">
             {time} CST
           </p>
