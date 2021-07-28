@@ -8,7 +8,7 @@ function MobileNavbar({ navbarLinks, isExpanded }) {
     <div
       className={`${componentStyles.navbarMenu} ${
         isExpanded ? `${componentStyles.isExpanded}` : ``
-      } bg-FCCblue-200 w-3/4 h-full pt-24`}
+      } bg-FCCblue-200 w-3/4 pt-24`}
     >
       {navbarLinks.map(link => (
         <Link
