@@ -1,8 +1,11 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import BlueFCCLogo from '../assets/FCC-Nashville-blue-logo.svg';
 import OrangeFCCLogo from '../assets/FCC-Nashville-orange-logo.svg';
 import componentStyles from './header.module.css';
+import MobileNavbar from './mobile-navbar';
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -16,6 +19,20 @@ function Header() {
     }
   `);
 
+  const navbarLinks = [
+    {
+      route: `/`,
+      title: `Home`,
+    },
+    {
+      route: `/about`,
+      title: `About`,
+    },
+    {
+      route: `/code-of-conduct`,
+      title: `Code Of Conduct`,
+    },
+  ];
   const currentPathname =
     typeof window !== `undefined` ? window.location.pathname : '/';
   const logo = path => {
@@ -40,38 +57,29 @@ function Header() {
         <Link to="/">{logo(currentPathname)}</Link>
 
         <button
-          className={componentStyles.navMenuButton}
+          className={`${componentStyles.navMenuButton} relative`}
           onClick={() => toggleExpansion(!isExpanded)}
         >
-          <svg
-            className={componentStyles.burgerIcon}
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
+          <FontAwesomeIcon
+            icon={faTimes}
+            size="2x"
+            className={`${componentStyles.timesIcon} ${
+              isExpanded ? `${componentStyles.isExpanded}` : ``
+            } fill-current text-white`}
+          />
+          <FontAwesomeIcon
+            icon={faBars}
+            size="2x"
+            className={`${componentStyles.barsIcon} ${
+              isExpanded ? `${componentStyles.isExpanded}` : ``
+            } fill-current text-gray-700`}
+          />
         </button>
 
-        <nav
-          className={
-            `${isExpanded ? `block` : `hidden`} ` + componentStyles.navMenu
-          }
-        >
-          {[
-            {
-              route: `/`,
-              title: `Home`,
-            },
-            {
-              route: `/about`,
-              title: `About`,
-            },
-            {
-              route: `/code-of-conduct`,
-              title: `Code Of Conduct`,
-            },
-          ].map(link => (
+        <MobileNavbar navbarLinks={navbarLinks} isExpanded={isExpanded} />
+
+        <nav className={componentStyles.navMenu}>
+          {navbarLinks.map(link => (
             <Link
               className={componentStyles.navMenuItems}
               key={link.title}
