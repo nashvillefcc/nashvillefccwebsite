@@ -16,9 +16,18 @@ import Connect from '../assets/Connect.svg';
 function footer() {
   return (
     <footer>
+<<<<<<< HEAD
       <nav className={componentStyles.footerNav}>
         <Connect className={componentStyles.connectLogo} alt={`Connect Logo`} />
         <div className={componentStyles.socials}>
+=======
+      <nav className="footerNav">
+        <div className="connect-logo-container">
+          <Connect className="connectLogo" alt={`Connect Logo`} />
+        </div>
+
+        <div className="socials">
+>>>>>>> afaad19... Made some changes to address suggested changes from Pete's review
           <a
             href="https://www.meetup.com/freeCodeCamp-Nashville/"
             aria-label="Meetup"

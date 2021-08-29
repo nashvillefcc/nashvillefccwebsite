@@ -1,10 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-// import heroImage from '../images/freeCodeCampImage.jpeg';
 
 const EventCard = ({ event }) => {
-  // utc_offset,
-  // venue: { name: venueName },
   const { id, is_online_event, name, time, thumbnail } = event;
 
   return (
@@ -17,7 +14,7 @@ const EventCard = ({ event }) => {
         <img className="object-cover w-full" src={thumbnail} />
         <div className="mt-4 h-1/2">
           <p className="text-blue-400 font-Roboto font-bold md:text-xl md:text-FCCgray-200">
-            {time} CST
+            {time} Central
           </p>
           <p className="text-FCCgray-200 font-Roboto font-extrabold text-lg md:text-2xl">
             {name}
@@ -37,7 +34,7 @@ EventCard.propTypes = {
     is_online_event: PropTypes.bool,
     name: PropTypes.string,
     time: PropTypes.string,
-    thumbnail: PropTypes.thumbnail,
+    thumbnail: PropTypes.src,
     utc_offset: PropTypes.number,
     venue: PropTypes.shape({
       name: PropTypes.string,

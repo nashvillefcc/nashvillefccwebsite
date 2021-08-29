@@ -8,7 +8,6 @@ function IndexPage() {
   const [upcomingEvents, setUpcomingEvents] = useState([]);
 
   useEffect(() => {
-    console.log(window.location.href);
     fetch(`${window.location.href}.netlify/functions/pingEvents`)
       .then(res => res.json())
       .then(data => {
@@ -29,8 +28,11 @@ function IndexPage() {
             is_online_event: items[i].content.includes('online'), // for now, I don't really see a better way to obtain this info, as there isn't any attribute that specifies this
           };
 
-          events.push(event);
+          // event.id = i === 2 ? 'no id found...' : event.id; //Just to test that the individual event will not be displayed if its ID is not found
+
+          if (event.id !== 'no id found...') events.push(event); // a small workaround, if no ID is found then we won't display that specific event
         }
+
         setUpcomingEvents(events);
       });
   }, []);
@@ -74,17 +76,25 @@ function IndexPage() {
         </h2>
       </section>
 
+<<<<<<< HEAD
       <section className="mainSection">
         <div className="mainSectionContent md:max-w-full md:px-12">
           <div className="px-8 grid gap-12 md:grid-cols-3 md:p-0">
+=======
+      <section className="main-section">
+        <div className="main-section-content">
+          <div
+            className={`px-8 grid gap-12 md:grid-cols-3 justify-center  md:p-0`}
+          >
+>>>>>>> afaad19... Made some changes to address suggested changes from Pete's review
             {upcomingEvents.length > 0 ? (
               upcomingEvents.map(e => {
                 return <EventCard key={e.id} event={e} />;
               })
             ) : (
-              <div className="w-screen h-48 flex items-center justify-center">
-                <h1 className="text-center text-3xl">
-                  Error loading events...
+              <div className="my-24">
+                <h1 className="text-3xl text-white bg-red-500 text-center">
+                  Error loading events
                 </h1>
               </div>
             )}

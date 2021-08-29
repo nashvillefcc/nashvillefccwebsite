@@ -6,11 +6,12 @@
 /*! purgecss end ignore */
 @tailwind utilities;
 
-.mainSection {
-  @apply w-full py-20;
+.main-section {
+  @apply w-full pt-20 pb-32;
 }
 
-.mainSectionContent {
+.main-section-content,
+.connect-logo-container {
   @apply w-full max-w-6xl px-4 mx-auto;
 }
 
@@ -51,8 +52,60 @@
 }
 
 @screen md {
+<<<<<<< HEAD
   .fccDivider h2 {
     font-size: 3rem;
     line-height: 1;
+=======
+  .logo {
+    @apply h-32 w-48 ml-16 mt-8;
+  }
+  .navBar {
+    @apply px-8;
+  }
+  .navMenu {
+    @apply flex items-center w-auto py-10;
+  }
+  .navMenuItems {
+    @apply inline-block mt-0 ml-6;
+  }
+  .navMenuButton {
+    @apply hidden;
+  }
+
+  footer {
+    height: 32em;
+  }
+
+  .socials {
+    font-size: 80px;
+  }
+
+  .socials a {
+    @apply mx-6;
+  }
+
+  .socials,
+  .emailAndCopyright {
+    height: 50%;
+  }
+
+  .emailAndCopyright {
+    @apply flex flex-row justify-around items-center;
+  }
+
+  .emailLink {
+    @apply justify-start;
+  }
+
+  .emailName {
+    @apply pl-4;
+  }
+
+  .connectLogo {
+    transform: translateY(-6.35em);
+    margin-left: 0;
+    width: 27em;
+>>>>>>> afaad19... Made some changes to address suggested changes from Pete's review
   }
 }

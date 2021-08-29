@@ -12,7 +12,7 @@ const handler = async function () {
     const cache_is_expired = await client
       .query(q.Get(q.Collection('Events'))) // query the events collection to grab the timestamp of the last time it was changed
       .then(function (response) {
-        const five_days = 28800000; // five days is the expiration time, an arbitrary number that can change... lower this number (run three times per day )
+        const eight_hours = 28800000; // 8 hours is the expiration time
         const today = Date.now();
 
         let lastCachedDate = new Date(response.ts / 1000); // take the timestamp and convert it to milliseconds (from microseconds which is faunaDB default)
@@ -20,12 +20,12 @@ const handler = async function () {
         let now = new Date(today);
         let difference = now - lastCachedDate; // take the difference between today and the last timestamp
 
-        return difference >= five_days; // return whether or not the timestamp is expired
+        return difference >= eight_hours; // return whether or not the timestamp is expired
       });
 
     const response = cache_is_expired // if the cache_is_expired is true, then request fresh data from the api, store it and then return it
       ? await fetch(
-          'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.meetup.com%2FfreeCodeCamp-Nashville%2Fevents%2Frss%2F',
+          'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.meetup.com%2FfreeCodeCamp-Nashville%2Fevents%2Frss',
           {
             headers: { Accept: 'application/json' },
           }
