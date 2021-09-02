@@ -71,11 +71,11 @@ function footer() {
         <div className={componentStyles.emailAndCopyright}>
           <div>
             <a
-              href="mailto:setha@hey.com"
+              href="mailto:info@nashvillefcc.com"
               className={componentStyles.emailLink}
             >
               <FontAwesomeIcon icon={faEnvelope} size="2x" color="white" />
-              <p className={componentStyles.emailName}>setha@hey.com</p>{' '}
+              <p className={componentStyles.emailName}>info@nashvillefcc.com</p>{' '}
               {/* This will change to something else once we setup a domain */}
             </a>
             <p>© 2021 FreeCodeCamp Nashville</p>
