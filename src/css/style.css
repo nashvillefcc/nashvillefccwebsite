@@ -6,12 +6,11 @@
 /*! purgecss end ignore */
 @tailwind utilities;
 
-.main-section {
-  @apply w-full pt-20 pb-32;
+.mainSection {
+  @apply w-full py-20;
 }
 
-.main-section-content,
-.connect-logo-container {
+.mainSectionContent {
   @apply w-full max-w-6xl px-4 mx-auto;
 }
 

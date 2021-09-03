@@ -76,17 +76,9 @@ function IndexPage() {
         </h2>
       </section>
 
-<<<<<<< HEAD
       <section className="mainSection">
-        <div className="mainSectionContent md:max-w-full md:px-12">
-          <div className="px-8 grid gap-12 md:grid-cols-3 md:p-0">
-=======
-      <section className="main-section">
-        <div className="main-section-content">
-          <div
-            className={`px-8 grid gap-12 md:grid-cols-3 justify-center  md:p-0`}
-          >
->>>>>>> afaad19... Made some changes to address suggested changes from Pete's review
+        <div className="mainSectionContent">
+          <div className="px-8 grid gap-12 md:grid-cols-3 justify-center md:p-0">
             {upcomingEvents.length > 0 ? (
               upcomingEvents.map(e => {
                 return <EventCard key={e.id} event={e} />;
