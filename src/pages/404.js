@@ -10,16 +10,15 @@ function NotFoundPage(props) {
     <Layout>
       <SEO title="404: Not found" />
       <div className="text-center">
-        <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
-          What do we put on a 404 page?
-
-          <Img 
-            className= "final404Img"
-            fluid={props.data.final404Image.childImageSharp.fluid}
-            alt="Image of a computer with the number 404 in the middle surrounded by an orange half circle."
-          />
-
-        </h2>
+        {/* <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3"></h2> */}
+          <div>
+            <Img 
+              className= "errorpage404"
+              fluid={props.data.errorpage404allorangewebsizelg.childImageSharp.fluid}
+              alt="Image of a computer with the number 404 in the middle surrounded by an orange half circle."
+            />
+          </div>
+        
       </div>
     </Layout>
   );
@@ -27,9 +26,9 @@ function NotFoundPage(props) {
 
 export const query = graphql`
   query {
-    final404Image: file(relativePath: { eq: "404Page-Final.png" }) {
+    ErrorPage404AllOrangeWebSizeLg: file(relativePath: { eq: "ErrorPage404AllOrangeWebSizeLg.svg" }) {
       childImageSharp {
-        fluid(maxWidth: 260, quality: 100) {
+        fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
