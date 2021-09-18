@@ -1,11 +1,3 @@
----
-name: General pull request
-about: To submit a general fix or change to project
-title: ''
-labels: ''
-assignees: ''
----
-
 # Pull Request Template
 
 ## Description
