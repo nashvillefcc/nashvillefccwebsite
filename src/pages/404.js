@@ -20,16 +20,4 @@ function NotFoundPage() {
   );
 }
 
-// export const query = graphql`
-//   query {
-//     errorpage404allorangewebsizelg: file(relativePath: { eq: "errorpage404allorangewebsizelg.svg" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 800, quality: 100) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `;
-
 export default NotFoundPage;
