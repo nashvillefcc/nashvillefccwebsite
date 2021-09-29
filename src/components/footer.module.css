@@ -59,7 +59,7 @@ footer {
 
   .connectLogo {
     transform: translateY(-6.35em);
-    margin-left: 4em;
+    margin-left: 0;
     width: 27em;
   }
 

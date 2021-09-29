@@ -10,20 +10,26 @@ var collection_reference = '301610187038392838'; // a reference to the specific 
 const handler = async function () {
   try {
     const cache_is_expired = await client
-      .query(q.Get(q.Collection('Events'))) // query the events collection to grab the timestamp of the last time it was changed
+      // query the events collection to grab the timestamp of the last time it was changed
+      .query(q.Get(q.Collection('Events')))
       .then(function (response) {
-        const eight_hours = 28800000; // 8 hours is the expiration time
+        // 8 hours is the expiration time
+        const eight_hours = 28800000;
         const today = Date.now();
 
-        let lastCachedDate = new Date(response.ts / 1000); // take the timestamp and convert it to milliseconds (from microseconds which is faunaDB default)
-
+        // take the timestamp and convert it to milliseconds (from microseconds which is faunaDB default)
+        let lastCachedDate = new Date(response.ts / 1000);
         let now = new Date(today);
-        let difference = now - lastCachedDate; // take the difference between today and the last timestamp
 
-        return difference >= eight_hours; // return whether or not the timestamp is expired
+        // take the difference between today and the last timestamp
+        let difference = now - lastCachedDate;
+
+        // return whether or not the timestamp is expired
+        return difference >= eight_hours;
       });
 
-    const response = cache_is_expired // if the cache_is_expired is true, then request fresh data from the api, store it and then return it
+    // if the cache_is_expired is true, then request fresh data from the api, store it and then return it
+    const response = cache_is_expired
       ? await fetch(
           'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.meetup.com%2FfreeCodeCamp-Nashville%2Fevents%2Frss',
           {
@@ -37,11 +43,13 @@ const handler = async function () {
                 // replace the expired data
                 data: { events: data },
               }),
-              q.Get(q.Ref(q.Collection('Events'), collection_reference)) // return the fresh data
+              // return the fresh data
+              q.Get(q.Ref(q.Collection('Events'), collection_reference))
             );
           })
       : await client.query(
-          q.Get(q.Ref(q.Collection('Events'), collection_reference)) // if it is not expired, just query the database
+          // if it is not expired, just query the database
+          q.Get(q.Ref(q.Collection('Events'), collection_reference))
         );
 
     let stringifiedData = JSON.stringify(response.data.events);

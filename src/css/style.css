@@ -10,7 +10,8 @@
   @apply w-full py-20;
 }
 
-.mainSectionContent {
+.mainSectionContent,
+.connect-logo-container {
   @apply w-full max-w-6xl px-4 mx-auto;
 }
 

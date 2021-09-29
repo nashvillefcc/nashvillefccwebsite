@@ -26,10 +26,10 @@ function IndexPage() {
         // if the status is not "ok" then stop the code, events will not be loaded
         if (data.status !== 'ok') return;
 
-        // assumes this is the standard date format and will not change
+        // Assumes this is the standard date format and will not change
         let date_regex = /\w+(day), \w+ \d{1,2} (at) \d{1,2}:\d{1,2} \w+/g;
 
-        // gets the id at the end of the url
+        // Gets the id at the end of the url
         let id_regex = /\w+(?=\/$)/g;
 
         let events = [];
@@ -38,18 +38,27 @@ function IndexPage() {
           // only need to display the three most upcoming events
           let date_matches = items[i].content.match(date_regex);
           let id_matches = items[i].guid.match(id_regex);
+          // A small array of strings that we might find in an in-person event description. This array can grow, but ultimately this could be done better.
+          const string_tests = ['in person', 'in-person', 'Tech Hill Commons'];
 
           let event = {
             id: id_matches ? id_matches[0] : 'no id found...',
             time: date_matches ? date_matches[0] : 'no date found...',
             name: items[i].title,
             thumbnail: items[i].thumbnail,
-            is_online_event: items[i].content.includes('online'), // for now, I don't really see a better way to obtain this info, as there isn't any attribute that specifies this
+
+            // for now, I don't really see a better way to obtain this info, as there isn't any attribute that specifies this
+            // the old way --> items[i].content.includes('online')
+            // I added this in because one of our current events is labeled as in-person via my previous method, but it is an online event. It contains no mention of it being online.
+            is_online_event: !string_tests.some(test_string =>
+              items[i].content.includes(test_string)
+            ),
           };
 
           // event.id = i === 2 ? 'no id found...' : event.id; //Just to test that the individual event will not be displayed if its ID is not found
 
-          if (event.id !== 'no id found...') events.push(event); // a small workaround, if no ID is found then we won't display that specific event
+          // a small workaround, if no ID is found then we won't display that specific event
+          if (event.id !== 'no id found...') events.push(event);
         }
 
         setUpcomingEvents(events);
