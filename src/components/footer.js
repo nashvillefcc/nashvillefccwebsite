@@ -17,7 +17,12 @@ function footer() {
   return (
     <footer>
       <nav className={componentStyles.footerNav}>
-        <Connect className={componentStyles.connectLogo} alt={`Connect Logo`} />
+        <div className="connect-logo-container">
+          <Connect
+            className={componentStyles.connectLogo}
+            alt={`Connect Logo`}
+          />
+        </div>
         <div className={componentStyles.socials}>
           <a
             href="https://www.meetup.com/freeCodeCamp-Nashville/"
@@ -75,7 +80,9 @@ function footer() {
               className={componentStyles.emailLink}
             >
               <FontAwesomeIcon icon={faEnvelope} size="2x" color="white" />
-              <p className={componentStyles.emailName}>info@nashvillefcc.com</p>{' '}
+              <p className={componentStyles.emailName}>
+                info@nashvillefcc.com
+              </p>{' '}
               {/* This will change to something else once we setup a domain */}
             </a>
             <p>© 2021 FreeCodeCamp Nashville</p>
