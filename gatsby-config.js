@@ -1,6 +1,5 @@
-const resolveConfig = require('tailwindcss/resolveConfig');
+const colors = require('tailwindcss/colors');
 const tailwindConfig = require('./tailwind.config.js');
-const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
@@ -20,8 +19,8 @@ module.exports = {
         name: `free-code-camp-nashville`,
         short_name: `free-code-camp-nashville`,
         start_url: `/`,
-        background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.teal['400'],
+        background_color: colors.white,
+        theme_color: colors.teal['400'],
         display: `minimal-ui`,
         icon: `static/favicon-32.png`,
       },
