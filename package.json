@@ -40,7 +40,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@tailwindcss/custom-forms": "0.2.1",
@@ -52,11 +53,17 @@
     "eslint-plugin-import": "2.22.0",
     "eslint-plugin-react": "7.20.3",
     "gatsby-plugin-eslint": "2.0.8",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.0",
     "prettier": "2.0.5",
     "tailwindcss": "1.5.2"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/nashvillefcc/nashvillefcc2020website"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
